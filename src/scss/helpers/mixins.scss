@@ -26,11 +26,6 @@
   @return ($px / 16) + rem;
 }
 
-@mixin flexible($justify: center) {
-  display: flex;
-  justify-content: $justify;
-}
-
 @mixin pseudo($width, $height, $content: '') {
   content: $content;
   width: $width;

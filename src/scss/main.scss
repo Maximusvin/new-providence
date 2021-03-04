@@ -1,4 +1,3 @@
-@import './components/preloader.scss';
 @import './fonts.scss';
 
 //helpers
@@ -6,16 +5,7 @@
 
 @import './base.scss';
 
-@import './components/header.scss';
-@import './components/main-section.scss';
-@import './components/footer.scss';
-
 //components
-@import './components/modal.scss';
-@import './components/movie-list.scss';
-@import './components/movie-info-modal.scss';
-@import './components/our-team.scss';
-@import './components/pagination.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
 @import './components/scrollUpBtn';
-@import './components/spiner.scss';
-@import './components/language.scss';

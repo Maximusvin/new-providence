@@ -1,8 +1,6 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 *,
@@ -16,14 +14,6 @@ html {
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(
-    180deg,
-    rgb(95, 95, 95) 0%,
-    rgb(34, 34, 34) 5%,
-    rgba(20, 20, 20, 1) 10%
-  );
-
-  color: #fff;
 }
 
 img {
