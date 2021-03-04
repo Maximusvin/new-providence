@@ -1,0 +1,123 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgb(95, 95, 95) 0%,
+    rgb(34, 34, 34) 5%,
+    rgba(20, 20, 20, 1) 10%
+  );
+
+  color: #fff;
+}
+
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  display: inline-block;
+}
+
+button:hover,
+button:focus,
+input:hover,
+input:focus {
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  // color: inherit;
+  // display: block;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+
+  @include for-size(mini-mobile) {
+    max-width: 400px;
+  }
+
+  @include for-size(mobile) {
+    max-width: 767px;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1280px;
+  }
+
+  @include for-size(hd-desktop) {
+    width: 1680px;
+  }
+}

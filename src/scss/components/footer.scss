@@ -1,0 +1,66 @@
+.footer {
+  position: relative;
+  // padding: 0 0 30px 0;
+
+  font-size: 12px;
+  text-align: center;
+
+  @include for-size(tablet) {
+    font-size: 14px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 16px;
+  }
+
+  @include for-size(hd-desktop) {
+    font-size: 18px;
+  }
+}
+
+.copyright {
+  margin-bottom: 15px;
+
+  &__link {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+    transition: color 0.2s linear;
+
+    @include for-size(tablet) {
+      font-size: 16px;
+    }
+
+    @include for-size(desktop) {
+      font-size: 18px;
+    }
+
+    @include for-size(hd-desktop) {
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+// .development {
+//   position: absolute;
+//   top: 35%;
+//   right: 30px;
+//   transform: translateY(-50%);
+//   cursor: pointer;
+//   font-size: 20px;
+//   transition: color 0.2s linear;
+
+//   &:hover,
+//   &:focus {
+//     color: #e40000;
+//   }
+// }
+
+.footer-container {
+  padding: 30px 10px 30px 10px;
+  border-top: 1px solid rgb(255, 0, 0);
+  box-shadow: inset 1px 9px 15px 5px rgba(0, 0, 0, 0.72);
+}
