@@ -1,5 +1,7 @@
 # production
 /build
+/.idea
+/processing
 
 # Logs
 logs
