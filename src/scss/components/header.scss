@@ -1,1 +1,75 @@
+// HEADER
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 55px 0;
+}
+.header__menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu-list li{
+    padding-right: 40px;
+}
+.header__menu-list li:last-child{
+    padding-right: unset;
+}
+.header__logo{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo-bold{
+    font-weight: 900;
+}
+.header__info-list{
+    display: flex;
+    justify-content: space-between;
+}
+.header__info-list li{
+    padding-right: 40px;
+}
+.header__info-list li:last-child{
+    padding-right: unset;
+}
 
+//INTRO
+.intro{
+    background: url(./../images/intro-bc.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.intro__info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+    height:100vh;
+}
+.intro__title{
+    padding-bottom: 40px;
+    font-size: 62px;
+}
+.intro__description{
+    padding-bottom: 60px;
+    font-size: 20px;
+    color: #8c8f94;
+}
+.intro__image img{
+    margin: 0 auto;
+}
