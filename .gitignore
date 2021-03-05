@@ -1,7 +1,5 @@
 # production
 /build
-/.idea
-/processing
 
 # Logs
 logs
@@ -68,3 +66,7 @@ typings/
 .env.development.local
 .env.test.local
 .env.production.local
+
+#Dev directories
+/.idea
+/processing
