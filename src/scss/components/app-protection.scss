@@ -1,0 +1,38 @@
+.app-protection {
+  height: max-content;
+  margin: 5rem 0;
+
+  &__background {
+    height: 55vw;
+    background-image: url("../images/iPhone-6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__content-wrap {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  &__content{
+    display:flex;
+    flex-direction:column;
+    max-width: 40%;
+    padding: 10% 0%;
+  }
+  &__title{
+
+  }
+  &__article{
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: #8c8f94;
+
+    &--elem:not(:last-child){
+      margin-bottom:1.25rem;
+    }
+  }
+
+}
+
