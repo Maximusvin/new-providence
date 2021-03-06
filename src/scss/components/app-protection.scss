@@ -28,8 +28,11 @@
     font-size: 1.25rem;
     line-height: 1.25;
     color: #8c8f94;
+
+    &--elem:not(:last-child){
+      margin-bottom:1.25rem;
+    }
   }
 
 }
-
 
