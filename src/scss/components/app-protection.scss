@@ -16,11 +16,20 @@
   }
 
   &__content{
+    display:flex;
+    flex-direction:column;
     max-width: 40%;
     padding: 10% 0%;
+  }
+  &__title{
+
+  }
+  &__article{
     font-size: 1.25rem;
     line-height: 1.25;
     color: #8c8f94;
   }
 
 }
+
+
