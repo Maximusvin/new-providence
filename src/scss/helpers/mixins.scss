@@ -1,22 +1,17 @@
 @mixin for-size($size) {
-  @if $size == mini-mobile {
-    @media (max-width: 400px) {
-      @content;
-    }
-  } @else if $size == mobile {
-    @media (max-width: 767px) {
+  @if $size == big-tablet {
+    // 769-992px
+    @media (max-width: 992px) {
       @content;
     }
   } @else if $size == tablet {
-    @media (min-width: 768px) {
+    // 577-768px
+    @media (max-width: 768px) {
       @content;
     }
-  } @else if $size == desktop {
-    @media (min-width: 1280px) {
-      @content;
-    }
-  } @else if $size == hd-desktop {
-    @media (min-width: 1680px) {
+  } @else if $size == mobile {
+    // 320-576px
+    @media (max-width: 576px) {
       @content;
     }
   }

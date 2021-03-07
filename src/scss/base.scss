@@ -16,7 +16,6 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 20px;
-  background-color: #ededee;
 }
 
 img {
@@ -33,6 +32,13 @@ h4,
 p {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
 }
 
 button,
@@ -93,24 +99,17 @@ li {
 .container {
   margin: 0 auto;
   padding: 0 15px 0 15px;
+  max-width: 1200px;
 
-  @include for-size(mini-mobile) {
-    max-width: 400px;
-  }
-
-  @include for-size(mobile) {
-    max-width: 767px;
+  @include for-size(big-tablet) {
+    max-width: 992px;
   }
 
   @include for-size(tablet) {
-    width: 768px;
+    max-width: 768px;
   }
 
-  @include for-size(desktop) {
-    width: 1280px;
-  }
-
-  @include for-size(hd-desktop) {
-    width: 1680px;
+  @include for-size(mobile) {
+    max-width: 576px;
   }
 }
