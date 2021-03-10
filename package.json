@@ -49,6 +49,7 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "core-js": "^3.9.1",
     "handlebars": "^4.7.7",
     "normalize.css": "^8.0.1",

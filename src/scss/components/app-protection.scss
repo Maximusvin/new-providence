@@ -3,16 +3,15 @@
   max-height: 1000px;
   margin: 5rem 0;
   @media (max-width: 1024px) {
-    height: 30rem;
+    height: 40rem;
   }
-  @media (max-width: 850px) {
-    height: 25rem;
-  }
+
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 50rem;
   }
 
   &__background {
@@ -25,19 +24,20 @@
     z-index: -10;
     background-position: -4.8rem 0;
     max-height: 800px;
-    @media (min-width: 1300px) {
+    @media (min-width: 1602px) {
       background-position: 75%;
     }
     @media (max-width: 1024px) {
-      height: 30rem;
+      height: 40rem;
       width: 50%;
+      background-position: -4.8rem 50%;
     }
-    @media (max-width: 850px) {
-      height: 25rem;
-    }
+
     @include for-size(tablet) {
       width: 80%;
-      background-position: center;
+      background-position: center 20%;
+      margin-top: -20rem;
+
     }
   }
 
@@ -50,16 +50,16 @@
     height: 100%;
     @include for-size(tablet) {
       flex-direction: column;
-      padding: 60rem 10% 0 10%;
+      padding: 0 10% 0 10%;
     }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    max-width: 41%;
     padding: 10% 0;
-    @media (max-width: 1300px) {
+    @media (max-width: 1282px) {
       max-width: 45%;
       padding: 9% 7% 0% 0;
     }
@@ -70,18 +70,73 @@
   }
 
   &__title {
+    font-size: 2.1rem;
+  }
 
+  &__title:nth-child(2) {
+    margin-bottom: 3.3rem;
   }
 
   &__article {
-    font-size: 1.25rem;
+    width: 100%;
+    font-size: inherit;
     line-height: 1.25;
     color: #8c8f94;
 
     &--elem:not(:last-child) {
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.60rem;
+    }
+
+    @media (min-width: 1100px) and (max-width: 1282px) {
+      font-size: 1.25vw;
+      width: 85%;
+    }
+    @media (max-width: 1099px) {
+      font-size: 1.25rem;
     }
   }
+
+  &__buttons-container {
+    display: flex;
+    margin-top: 3.35rem;
+  }
+
+  &__btn {
+    height: 32px;
+    padding: 0 1.6em;
+    border-radius: 16px;
+    border: 1px solid lightgrey;
+    font-size: 0.8rem;
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: #267DF4;
+      border: 0;
+    }
+
+    &:hover > .fa-arrow-right {
+      display: inline-block;
+    }
+
+    .fa-arrow-right {
+      width: 0.6rem;
+      margin: auto -0.6rem auto 1.6rem;
+      fill: #ffffff;
+      display: none;
+
+      &:hover {
+        display: inline-block;
+      }
+    }
+  }
+
 }
 
 .shadow {
