@@ -1,0 +1,62 @@
+.download {
+  padding-top: 75px;
+  padding-bottom: 130px;
+  background-color: #fff;
+  text-align: center;
+
+  &__logo {
+    color: rgba(58, 61, 75, 0.5);
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(34, 35, 40, 0.2);
+    width: 500px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+  }
+
+  &__input {
+    display: block;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    background-color: #6fc754;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 40px;
+    font-style: 16px;
+
+    & span {
+      margin-right: 18px;
+    }
+  }
+
+  &__btn-icon {
+    display: inline;
+    width: 10px;
+    fill: #fff;
+  }
+}
