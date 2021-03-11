@@ -1,18 +1,18 @@
 .map .container {
   border-right: 1px solid red;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+  // display: flex;
+  // justify-content: space-between;
+  // position: relative;
 }
 
 .map {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #fff;
-  // background-image: url('../images/world-map.png');
-  // background-position: 145% center;
-  // background-size: auto;
-  // background-repeat: no-repeat;
+  background-image: url('../images/world-map.png');
+  background-position: right center;
+  background-size: auto;
+  background-repeat: no-repeat;
 
   &__title {
     font-size: 42px;
@@ -109,5 +109,10 @@
   &__word-map-dot_3 {
     top: 160px;
     right: 729px;
+  }
+
+  &__word-map-dot_4 {
+    top: 192px;
+    right: 764px;
   }
 }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #26272d;
+        fill-rule: evenodd;
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path id="LinkedIn_Icon" data-name="LinkedIn Icon" class="cls-1" d="M424.64,7479.01v-10.12h-3.428v10.12h3.428Zm-1.714-11.5a1.912,1.912,0,1,0-.023,0h0.023Zm3.613,11.5h3.429v-5.65a2.2,2.2,0,0,1,.114-0.82,1.862,1.862,0,0,1,1.757-1.23c1.242,0,1.739.92,1.739,2.29v5.41h3.429v-5.8c0-3.11-1.693-4.56-3.949-4.56a3.43,3.43,0,0,0-3.113,1.71h0.023v-1.47h-3.429c0.045,0.95,0,10.12,0,10.12h0Z" transform="translate(-421 -7464)"/>
+</svg>

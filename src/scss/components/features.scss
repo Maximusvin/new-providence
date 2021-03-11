@@ -1,0 +1,55 @@
+.features {
+  padding-top: 124px;
+  padding-bottom: 40px;
+  background-color: #fff;
+
+  &__wrap {
+    padding-bottom: 125px;
+    border-bottom: 1px solid rgba(38, 39, 45, 0.051);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 500px;
+    padding-top: 95px;
+    position: relative;
+  }
+
+  &__item::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+  }
+
+  &__item--lock::before {
+    background-image: url('../images/icon/lock.png');
+  }
+
+  &__item--clock::before {
+    background-image: url('../images/icon/clock.png');
+  }
+
+  &__item-title {
+    font-size: 26px;
+    font-weight: 300;
+    color: #26272d;
+    margin-bottom: 45px;
+  }
+
+  &__item-content {
+    font-size: 18px;
+    line-height: 26px;
+    color: #8c8f94;
+  }
+
+  &__item-content:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

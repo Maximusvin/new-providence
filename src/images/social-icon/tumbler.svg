@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.25" height="16" viewBox="0 0 9.25 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #26272d;
+        fill-rule: evenodd;
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path id="Tumbler_Icon" data-name="Tumbler Icon" class="cls-1" d="M349.5,7476.78a3.434,3.434,0,0,1-1.264.28c-1.253.03-1.245-1.18-1.256-1.86v-4.8H350V7468h-3.023v-4H344.1a0.131,0.131,0,0,0-.113.12A4.27,4.27,0,0,1,341,7468v2.4h1.98v5.6c0,1.79,1.147,4.06,4.558,4a4.146,4.146,0,0,0,2.712-.93Z" transform="translate(-341 -7464)"/>
+</svg>

@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
   },
-  "homepage": "https://github.com/luxplanjay/webpack-starter-kit#readme",
+  "homepage": "https://maximusvin.github.io/new-providence/",
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
