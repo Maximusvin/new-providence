@@ -11,26 +11,26 @@
 
     background-size: cover;
 
-
 &__navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 55px 0;
+    padding-top: 35px;
     font-size: 16px;
+    @media (max-width:1200px){
+        padding:40px 40px;
+    }
 }
 //БУРГЕР-МЕНЮ
 &__burger{
-    display: none;
+    display: block;
     position: relative;
     width: 20px;
     height: 12px;
     margin-right: 30px;
 
-    @media (max-width: 990px) {
-       display: block;
-      }
+
 }
 &__burger span{
     background-color: #1b1c1e;
@@ -85,6 +85,7 @@
     display: flex;
     justify-content: space-between;
     transition: all .2s ease;
+    margin-left: 35px;
 }
 &__logo-bold{
     font-weight: 900;
@@ -129,6 +130,7 @@
     transform: translate3d(0, -50%, 0);
 
 }
+//INFO
 &__info{
     display: flex;
     justify-content: center;
@@ -138,12 +140,16 @@
     width: 100%;
     max-width: 770px;
     margin: 0 auto;
-    height:100vh;
+    height:65vh;
 }
 &__title{
     padding-bottom: 40px;
     font-size: 62px;
     font-family: 'Varela Round';
+
+    // @include for-size(tablet) {
+    //     font-size: 22px;
+    //   }
 }
 &__description{
     padding-bottom: 60px;
