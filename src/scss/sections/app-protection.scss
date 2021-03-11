@@ -71,9 +71,6 @@
 
   &__title {
     font-size: 2.1rem;
-  }
-
-  &__title:nth-child(2) {
     margin-bottom: 3.3rem;
   }
 
@@ -102,41 +99,16 @@
   }
 
   &__btn {
-    height: 32px;
-    padding: 0 1.6em;
-    border-radius: 16px;
-    border: 1px solid lightgrey;
-    font-size: 0.8rem;
-    color: #000000;
-    background-color: #ffffff;
-    cursor: pointer;
+    @include main-button(transparent);
 
     &:not(:last-child) {
       margin-right: 1rem;
     }
 
     &:hover {
-      color: #ffffff;
-      background-color: #267DF4;
-      border: 0;
-    }
-
-    &:hover > .fa-arrow-right {
-      display: inline-block;
-    }
-
-    .fa-arrow-right {
-      width: 0.6rem;
-      margin: auto -0.6rem auto 1.6rem;
-      fill: #ffffff;
-      display: none;
-
-      &:hover {
-        display: inline-block;
-      }
+      @include main-button(blue);
     }
   }
-
 }
 
 .shadow {

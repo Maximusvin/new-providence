@@ -41,3 +41,44 @@
   background-position: $position;
   background-size: $size;
 }
+
+@mixin main-button($color) {
+  height: 32px;
+  padding: 0 1.6em;
+  border-radius: 16px;
+  border: 1px solid;
+  font-size: 0.8rem;
+  cursor: pointer;
+  @if $color == transparent {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #E6E6E6;
+  } @else if $color == blueTransparent {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #267DF4;
+  } @else if $color == blue {
+    color: #ffffff;
+    background-color: #267DF4;
+    border: 0;
+  } @else if $color == green {
+    color: #ffffff;
+    background-color: #6FC754;
+    border: 0;
+  }
+  &:hover {
+    padding: 0 4.8em 0.1em 1.6em;
+  }
+  &:hover > .fa-arrow-right {
+    display: inline-block;
+    margin: auto auto auto 3em;
+    padding: 0.3em 0 0 0;
+    position: absolute;
+  }
+  .fa-arrow-right {
+    width: 0.6rem;
+    margin: auto -0.6rem auto 1.6rem;
+    fill: #ffffff;
+    display: none;
+  }
+}
