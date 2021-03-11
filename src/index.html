@@ -12,7 +12,7 @@
 
   <body>
     <!-- Юля -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
           <nav class="header__navigation">
@@ -26,9 +26,8 @@
                 <li><a href="#">Pricing</a></li>
               </ul>
             </div>
-            <a href="#" class="header__logo-link">
-              <span class="header__logo-bold">New</span>
-              <span class="header__logo-regular">Providence</span>
+            <a href="#header" class="logo">
+              <span class="logo__bold">New</span>Providence
             </a>
             <ul class="header__info-list">
               <li><a href="#">Help</a></li>
@@ -182,8 +181,38 @@
       </section>
 
       <!-- Макс -->
-      <section class="ready-to-buy" id="ready-to-buy">
-        <div class="container">Ready-to-Buy</div>
+      <section class="download" id="download">
+        <div class="container">
+          <a href="#header" class="logo download__logo">
+            <span class="logo__bold">New</span>Providence
+          </a>
+          <h2 class="download__title">Get it to your smartphone</h2>
+          <form class="download__form">
+            <input
+              class="download__input"
+              type="text"
+              placeholder="denis@getcraftwork.com"
+            />
+            <button type="submit" class="download__btn">
+              <span>Send Invite</span>
+              <svg
+                class="download__btn-icon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="arrow-right"
+                class="svg-inline--fa fa-arrow-right fa-w-14"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
       </section>
 
       <!-- Юля -->
