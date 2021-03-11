@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #26272d;
+        fill-rule: evenodd;
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path id="Google_Icon" data-name="Google Icon" class="cls-1" d="M300.615,7479a7.5,7.5,0,1,1,0-15,7.654,7.654,0,0,1,5.137,1.97l-2.244,2.16a4.505,4.505,0,0,0-2.893-1.04,4.411,4.411,0,1,0,4.191,5.98h-4.287v-3.14h7.544a7.468,7.468,0,0,1,.166,1.57A7.559,7.559,0,0,1,300.615,7479ZM317,7472.07h-2.65v2.61h-1.928v-2.61h-2.65v-1.9h2.65v-2.61h1.928v2.61H317v1.9Z" transform="translate(-293 -7464)"/>
+</svg>
