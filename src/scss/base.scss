@@ -77,7 +77,6 @@ a:visited,
 a:hover,
 a:focus {
   text-decoration: none;
-  color: inherit;
   display: block;
 }
 
@@ -88,12 +87,6 @@ li {
   list-style: none;
 }
 
-.btn {
-  display: block;
-  cursor: pointer;
-  padding: 10px 10px;
-}
-
 .is-hidden {
   display: none;
 }
@@ -102,6 +95,10 @@ li {
   margin: 0 auto;
   padding: 0 15px 0 15px;
   max-width: 1200px;
+
+  @include for-size(desktop) {
+    max-width: 1280px;
+  }
 
   @include for-size(big-tablet) {
     max-width: 992px;
