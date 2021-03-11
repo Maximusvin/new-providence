@@ -1,7 +1,7 @@
 @mixin for-size($size) {
   @if $size == desktop {
-    // 993-1280px
-    @media (max-width: 1280px) {
+    // 993-1282px
+    @media (max-width: 1282px) {
       @content;
     }
   } @else if $size == big-tablet {
@@ -43,12 +43,29 @@
 }
 
 @mixin main-button($color) {
-  height: 32px;
-  padding: 0 1.6em;
-  border-radius: 16px;
+  height: 45px;
+  padding: 0 2em;
+  border-radius: 25px;
   border: 1px solid;
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   cursor: pointer;
+  &:hover {
+    padding: 0 5.5em 0.1em 1.6em
+  }
+  &:hover > .fa-arrow-right {
+    display: inline-block;
+    padding: 0.3em 0 0 0;
+    position: absolute;
+  }
+  .fa-arrow-right {
+    display: none;
+    width: 0.77rem;
+    margin: auto auto auto 3.3em;
+    fill: #ffffff;
+    padding: 0.3em 0 0 0;
+    position: absolute;
+  }
+
   @if $color == transparent {
     color: #000000;
     background-color: #ffffff;
@@ -66,19 +83,21 @@
     background-color: #6FC754;
     border: 0;
   }
-  &:hover {
-    padding: 0 4.8em 0.1em 1.6em;
-  }
-  &:hover > .fa-arrow-right {
-    display: inline-block;
-    margin: auto auto auto 3em;
-    padding: 0.3em 0 0 0;
-    position: absolute;
-  }
-  .fa-arrow-right {
-    width: 0.6rem;
-    margin: auto -0.6rem auto 1.6rem;
-    fill: #ffffff;
-    display: none;
+
+  @include for-size(desktop) {
+    height: 32px;
+    padding: 0 1.6em;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    &:hover {
+      padding: 0 4.8em 0.1em 1.6em;
+    }
+    &:hover > .fa-arrow-right {
+      padding: 0.3em 0 0 0;
+    }
+    .fa-arrow-right {
+      width: 0.6rem;
+      margin: auto auto auto 3em;
+    }
   }
 }
