@@ -1,0 +1,22 @@
+.app-store {
+  display: inline-block;
+  text-align: left;
+  font-size: 12px;
+  line-height: 24.84px;
+  color: azure;
+  padding-top: 13px;
+  padding-right: 40px;
+  padding-bottom: 11px;
+  padding-left: 70px;
+  background-color: #131315;
+
+  & span {
+    display: block;
+    font-size: 23px;
+  }
+
+  &:hover,
+  &:focus {
+    display: inline-block;
+  }
+}
