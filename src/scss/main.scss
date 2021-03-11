@@ -5,9 +5,12 @@
 @import './base.scss';
 
 //components
-@import './components/header.scss';
-@import './components/features.scss';
-@import './components/app-protection.scss';
-@import './components/map.scss';
-@import './components/footer.scss';
+@import './components/logo.scss';
 @import './components/scrollUpBtn';
+
+// sections
+@import './sections/header.scss';
+@import './sections/features.scss';
+@import './sections/app-protection.scss';
+@import './sections/map.scss';
+@import './sections/footer.scss';
