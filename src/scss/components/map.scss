@@ -1,18 +1,23 @@
-.map .container {
-  border-right: 1px solid red;
-  // display: flex;
-  // justify-content: space-between;
-  // position: relative;
-}
-
 .map {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #fff;
-  background-image: url('../images/world-map.png');
-  background-position: right center;
-  background-size: auto;
-  background-repeat: no-repeat;
+  position: relative;
+
+  &__background {
+    position: absolute;
+    width: 52%;
+    height: 100%;
+    background-image: url('../images/world-map.png');
+    background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: 0% 50%;
+    right: 0;
+
+    // @media (min-width: 1602px) {
+    //   background-position: 75%;
+    // }
+  }
 
   &__title {
     font-size: 42px;
@@ -63,56 +68,5 @@
     position: absolute;
     top: 0;
     right: -273px;
-  }
-
-  &__word-map-dot {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #267df4;
-    transition: all 0.2s linear;
-  }
-
-  &__word-map-dot:hover,
-  &__word-map-dot:focus {
-    box-shadow: 0 0 10px rgb(41, 20, 114);
-    width: 10px;
-    height: 10px;
-    transform: translate(2px, -2px);
-  }
-
-  &__word-map-location {
-    position: absolute;
-    top: -20px;
-    left: 0;
-    font-size: 14px;
-    width: 100px;
-    display: none;
-  }
-
-  &__word-map-dot:hover .map__word-map-location,
-  &__word-map-dot:focus .map__word-map-location {
-    display: block;
-  }
-
-  &__word-map-dot_1 {
-    top: 19%;
-    right: 747px;
-  }
-
-  &__word-map-dot_2 {
-    top: 143px;
-    right: 689px;
-  }
-
-  &__word-map-dot_3 {
-    top: 160px;
-    right: 729px;
-  }
-
-  &__word-map-dot_4 {
-    top: 192px;
-    right: 764px;
   }
 }
