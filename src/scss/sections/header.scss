@@ -5,6 +5,7 @@ a:hover,
 a:focus {
   color: #1b1c1e;
 }
+
 .header {
   width: 100%;
   height: 100%;
@@ -105,11 +106,11 @@ a:focus {
   &__info-list li {
     padding-right: 40px;
   }
-  &__info-list li:last-child{
+  &__info-list li:last-child {
     padding-right: unset;
     color: #fff;
   }
-  &__info-list li:last-child a{
+  &__info-list li:last-child a {
     color: #fff;
   }
   &__info-list li:hover {
@@ -164,7 +165,7 @@ a:focus {
     border: 1px solid #dadcdf;
     padding: 20px 45px 20px 65px;
     border-radius: 40px;
-    background-color: #f0f2f3;;
+    background-color: #f0f2f3;
     font-size: 16px;
 
     position: relative;

@@ -89,6 +89,7 @@
     padding-top: 42px;
     padding-bottom: 50px;
     z-index: 0;
+    opacity: 0;
 
     &-title {
       font-size: 32px;
@@ -197,6 +198,10 @@
   &__card--pro {
     position: absolute;
     right: 0;
+  }
+
+  &__card.show {
+    opacity: 1;
   }
 }
 
