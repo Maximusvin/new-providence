@@ -49,6 +49,7 @@
   border: 1px solid;
   font-size: 1.05rem;
   cursor: pointer;
+  white-space: nowrap;
   &:hover {
     padding: 0 5.5em 0.1em 1.6em
   }
@@ -84,7 +85,7 @@
     border: 0;
   }
 
-  @include for-size(desktop) {
+  @media (min-width: 769px) and (max-width: 1282px) {
     height: 32px;
     padding: 0 1.6em;
     border-radius: 16px;
