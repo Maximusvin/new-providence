@@ -85,15 +85,13 @@
   &__menu-list li:last-child {
     padding-right: unset;
   }
-
-  &__menu-list li:hover {
+  &__menu-list a:hover {
     color: #9f9fa1;
     transition: 0.1s;
   }
   &__menu-list a{
     color: #1b1c1e;
   }
-
   &__info-list {
     display: flex;
     justify-content: space-between;
@@ -109,7 +107,7 @@
   &__info-list li:last-child a {
     color: #fff;
   }
-  &__info-list li:hover {
+  &__info-list a:hover {
     color: #9f9fa1;
     transition: 0.1s;
   }
