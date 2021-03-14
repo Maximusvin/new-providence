@@ -1,0 +1,41 @@
+.app-store {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  text-align: left;
+  font-size: 12px;
+  line-height: 20.84px;
+  color: #fff;
+  padding-top: 8px;
+  padding-right: 40px;
+  padding-bottom: 13px;
+  padding-left: 27px;
+  background-color: #131315;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.2s linear;
+
+  & span {
+    display: block;
+    font-size: 23px;
+  }
+
+  &:hover,
+  &:focus {
+    display: flex;
+    color: rgb(38, 125, 244);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  &__icon {
+    fill: #fff;
+    margin-right: 18px;
+    transition: all 0.2s linear;
+  }
+
+  &:hover .app-store__icon,
+  &:focus .app-store__icon {
+    fill: #267df4;
+  }
+}

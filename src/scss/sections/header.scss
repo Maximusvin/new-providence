@@ -72,6 +72,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #1b1c1e;
   }
   &__menu-list {
     display: flex;
@@ -84,12 +85,13 @@
   &__menu-list li:last-child {
     padding-right: unset;
   }
-
-  &__menu-list li:hover {
+  &__menu-list a:hover {
     color: #9f9fa1;
     transition: 0.1s;
   }
-
+  &__menu-list a{
+    color: #1b1c1e;
+  }
   &__info-list {
     display: flex;
     justify-content: space-between;
@@ -100,21 +102,26 @@
   }
   &__info-list li:last-child {
     padding-right: unset;
+    color: #fff;
   }
-  &__info-list li:hover {
+  &__info-list li:last-child a {
+    color: #fff;
+  }
+  &__info-list a:hover {
     color: #9f9fa1;
     transition: 0.1s;
   }
-  &__info-list li:last-child {
+  &__info-list a{
+    color: #1b1c1e;
+  }
+  &__info-link {
     color: #fff;
     background-color: #267df4;
-    border: 1px solid #dadcde;
     padding: 15px 30px 15px 50px;
     border-radius: 40px;
     position: relative;
   }
-
-  &__info-list li:last-child::before {
+  &__info-link::before {
     content: url('./../images/apple-icon.png');
     left: 20px;
     top: 50%;
@@ -155,7 +162,7 @@
     border: 1px solid #dadcdf;
     padding: 20px 45px 20px 65px;
     border-radius: 40px;
-    background-color: unset;
+    background-color: #f0f2f3;
     font-size: 16px;
 
     position: relative;

@@ -1,0 +1,211 @@
+.plan {
+  padding-top: 160px;
+  padding-bottom: 190px;
+  background-color: #f4f4f5;
+
+  &__select-wrap {
+    width: 370px;
+  }
+
+  &__title {
+    font-family: 'Varela Round';
+    font-size: 42px;
+    color: #26272d;
+    margin-bottom: 65px;
+  }
+
+  &__suptitle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(38, 41, 44, 0.149);
+    border-radius: 25px;
+    padding: 3px;
+    width: 258px;
+    font-size: 16px;
+    margin-bottom: 78px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    transition: all 0.1s linear;
+  }
+
+  &__btn.active {
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15),
+      0px 30px 50px 0px rgba(92, 95, 101, 0.28);
+  }
+
+  &__text {
+    font-size: 20px;
+    color: #8c8f94;
+    margin-bottom: 40px;
+    line-height: 28px;
+  }
+
+  &__text-link {
+    font-size: 14px;
+    color: #8c8f94;
+
+    & a {
+      display: inline;
+      color: #267df4;
+      text-decoration: underline;
+    }
+  }
+
+  &__tariffs-wrap {
+    display: flex;
+    align-items: center;
+    width: 670px;
+    position: relative;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 340px;
+    height: 510px;
+    background-color: rgb(235, 235, 237);
+    border-radius: 10px;
+    padding-top: 42px;
+    padding-bottom: 50px;
+    z-index: 0;
+    opacity: 0;
+
+    &-title {
+      font-size: 32px;
+      font-weight: 300;
+      color: #26272d;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__order {
+    border: 1px solid rgba(38, 41, 44, 0.2);
+    border-radius: 25px;
+    width: max-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #26272d;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+
+  &__tariff-name {
+    width: 200px;
+    color: #8c8f94;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+
+  &__card-list {
+    font-size: 16px;
+    color: #26292c;
+  }
+
+  &__card-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__card-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &__card-icon {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    fill: #6fc754;
+  }
+
+  &__card-btn {
+    border: 1px solid rgb(38, 125, 244);
+    border-radius: 25px;
+    background-color: transparent;
+    color: #267df4;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: #267df4;
+      color: #fff;
+    }
+  }
+
+  &__card.active {
+    // position: absolute;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    height: 552px;
+    width: 340px;
+    background-color: #fff;
+    box-shadow: 0px 30px 50px 0px rgba(92, 95, 101, 0.2);
+    border-radius: 10px;
+    z-index: 100;
+
+    & .plan__card-btn {
+      width: 212px;
+      background-color: #267df4;
+      color: #fff;
+      &:hover {
+        box-shadow: 0px 30px 50px 0px rgba(92, 95, 101, 0.2);
+      }
+    }
+  }
+
+  &__card--free {
+    position: absolute;
+    left: 0;
+  }
+
+  &__card--pro {
+    position: absolute;
+    right: 0;
+  }
+
+  &__card.show {
+    opacity: 1;
+  }
+}
+
+.plan .container {
+  display: flex;
+  justify-content: space-between;
+}

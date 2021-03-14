@@ -5,13 +5,18 @@
   color: #26272d;
   font-size: 20px;
   font-weight: 400;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 
-  &__bold {
+  &:hover {
     font-weight: 900;
   }
 
-  &:hover {
-    transform: scale(1.051);
+  &__bold {
+    font-weight: 900;
+    transition: all 0.2s linear;
+  }
+
+  &:hover .logo__bold {
+    color: #267df4;
   }
 }

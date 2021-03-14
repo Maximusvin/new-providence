@@ -1,13 +1,142 @@
 .footer {
-  @include for-size(tablet) {
+  padding-top: 88px;
+  background-color: #fff;
+
+  &__up {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 129px;
+    border-bottom: 1px solid rgba(38, 41, 44, 0.05);
+  }
+
+  &__content-wrap {
+    width: 270px;
+  }
+
+  &__logo {
+    margin-bottom: 33px;
+  }
+
+  &__content {
+    color: #8c8f94;
     font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
   }
 
-  @include for-size(desktop) {
+  &__app-store {
+    border-radius: 8px;
+    font-size: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 8px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 11px;
+    margin-bottom: 40px;
+  }
+
+  &__social-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 14px;
+  }
+
+  &__social-icon {
+    fill: rgba(38, 39, 45, 0.3);
+    width: 25px;
+    height: 17px;
+    transition: all 0.2s linear;
+  }
+
+  &__social-item:hover .footer__social-icon,
+  &__social-item:focus .footer__social-icon {
+    fill: rgba(38, 39, 45, 1);
+    filter: drop-shadow(-12px 30px 30px rgba(106, 119, 145, 0.15))
+      drop-shadow(1px 7px 5px rgba(61, 61, 62, 0.35));
+  }
+
+  &__navigation-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+
+  &__menu--item {
+    width: 170px;
+  }
+
+  &__menu h3 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #26272d;
+    margin-bottom: 23px;
+  }
+
+  &__link {
     font-size: 16px;
+    line-height: 36px;
+    color: #8c8f94;
+    transition: color 0.2s linear;
+
+    &:hover,
+    &:focus {
+      color: #202020;
+    }
   }
 
-  @include for-size(hd-desktop) {
-    font-size: 18px;
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 37px;
+    padding-bottom: 37px;
   }
+
+  &__column-left p {
+    font-size: 14px;
+    color: #8c8f94;
+  }
+
+  &__column-left a {
+    display: inline;
+    font-size: 14px;
+    color: #3b55e6;
+    text-decoration: underline;
+  }
+
+  &__column-right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__column-right p {
+    display: flex;
+    align-items: center;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 3px;
+    margin-right: 11px;
+  }
+
+  &__column-right svg {
+    width: 108px;
+    transition: all 0.2s linear;
+
+    &:hover,
+    &:focus {
+      fill: #267df4;
+    }
+  }
+}
+
+.app-store__icon {
+  margin-right: 10px;
 }
