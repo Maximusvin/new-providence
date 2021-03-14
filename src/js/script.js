@@ -2,3 +2,4 @@
 //js modules
 
 import './plan';
+import './customers';
