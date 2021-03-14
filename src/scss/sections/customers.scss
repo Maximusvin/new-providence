@@ -1,29 +1,18 @@
 .customers{
-    &__arrow{
-        position: absolute;
-        left: 0px;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
-        z-index: 1;
-
-        cursor: pointer;
-    }
-    &__arrow-right{
-        position: absolute;
-        right: 0px;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
-        z-index: 1;
-
-        cursor: pointer;
-    }
     &__inner{
-        position: relative;
-        left: 0;
-        top: 0;
-        z-index: 1;
+        min-width: 0;
+        flex-grow: 1;
     }
-    &__item{
+    &__slider{
+        text-align: center;
+        max-width: 100%;
+    }
+}
+.swiper{
+    &-container{
+        width: 100%;
+    }
+    &-slide{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,12 +21,14 @@
         max-width: 590px;
         width: 100%;
         padding: 100px 0;
-       
+        position: relative;
+        z-index: 5;
+        opacity: 1;
     }
     &__image img{
         width: 132px;
         height: 132px;
-        border-radius: 100px;
+        border-radius: 50%;
     }
     &__title{
         padding: 50px 0;
