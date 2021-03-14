@@ -2,3 +2,5 @@
 //js modules
 
 import './plan';
+
+import './interface';
