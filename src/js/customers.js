@@ -1,9 +1,13 @@
-import Swiper from './../../node_modules/swiper';
+import Swiper from 'swiper';
   // import Swiper styles
-import './../../node_modules/swiper/swiper-bundle.css';
+import 'swiper/swiper-bundle.css';
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+
+// configure Swiper to use modules
+SwiperCore.use([Navigation, Pagination]);
 
 const swiper = new Swiper('.swiper-container',{
-    
+
     loop: true,
     pagination: {
       el: '.swiper-pagination',
