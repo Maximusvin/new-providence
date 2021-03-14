@@ -1,6 +1,5 @@
-import Swiper from './../../node_modules/swiper';
-// import Swiper styles
-import './../../node_modules/swiper/swiper-bundle.css';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
 
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 SwiperCore.use([Navigation, Pagination]);
