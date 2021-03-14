@@ -59,6 +59,7 @@
 
 .swiper-pagination {
   display: flex;
+  align-items: center;
 }
 
 .swiper-pagination img {
@@ -78,14 +79,11 @@
   border: 1px solid #ddd;
   padding: 5px;
   margin: 2px;
+  transition: all 0.2s linear;
 }
 
 .swiper-pagination img.swiper_pagination_img-active {
-  top: -15px;
-}
-.swiper-slide {
-  text-align: center;
-}
-.swiper-slide {
-  height: 80%;
+  width: 130px;
+  height: 130px;
+  box-shadow: 0 0 15px red;
 }
