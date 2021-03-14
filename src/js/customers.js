@@ -1,16 +1,31 @@
-const { default: Swiper } = require("swiper");
+import Swiper from './../../node_modules/swiper';
+  // import Swiper styles
+import './../../node_modules/swiper/swiper-bundle.css';
 
-new Swiper('.swiper-container',{
-    direction: 'horizontal',
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-      },
-    navigation:{
-        nextEl:'.swiper-button-next',
-        prevEl:'.swiper-button-prev'
-    }
-})
+const swiper = new Swiper('.swiper-container',{
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+          },
+        navigation:{
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev',
+        },
+  });
+// const { default: Swiper } = require("swiper");
+
+// new Swiper('.swiper-container',{
+//     direction: 'horizontal',
+//     loop: true,
+//     pagination: {
+//         el: '.swiper-pagination',
+//       },
+//     navigation:{
+//         nextEl:'.swiper-button-next',
+//         prevEl:'.swiper-button-prev'
+//     }
+// })
 
 
 // const customersItemRef = document.querySelector('.customers__item')

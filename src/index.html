@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="./np-favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./np-favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
     <title>New Providence</title>
   </head>
 
@@ -241,62 +239,65 @@
       <section class="customers" id="customers">
         <div class="container">
           <div class="customers__inner">
-            <div class = 'swiper-container'></div>
+            <!-- Slider main container -->
+            <div class="customers__slider swiper-container">
+              <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="swiper__image">
+                <!-- Slides -->
+                <div class="customers__slider swiper-slide">
+                  <div class="customers__slider-image">
                     <img src="./images/userpic1.png" alt="user">
                   </div>
-                  <div class="swiper__text-content">
-                    <p class="swiper__title">New Providence is the great UI kit </p>
-                    <p class="swiper__review">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
-                    <div class="swiper__review-stars">
+                  <div class="customers__slider-text-content">
+                    <p class="customers__slider-title">New Providence is the great UI kit </p>
+                    <p class="customers__slider-review">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+                    <div class="customers__slider-review-stars">
                       <img src="./images/star.png" alt="star">
                       <img src="./images/star.png" alt="star">
                       <img src="./images/star.png" alt="star">
                       <img src="./images/star.png" alt="star">
                     </div>
-                  <p class="swiper__name">Cameron Dowman</p>
+                  <p class="customers__slider-name">Lily Grace</p>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="swiper__image">
-                    <img src="./images/userpic3.png" alt="user">
-                  </div>
-                  <div class="swiper__text-content">
-                    <p class="swiper__title">New Providence is the great UI kit </p>
-                    <p class="swiper__review">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
-                    <div class="swiper__review-stars">
-                      <img src="./images/star.png" alt="star">
-                      <img src="./images/star.png" alt="star">
-                      <img src="./images/star.png" alt="star">
-                      <img src="./images/star.png" alt="star">
-                      <img src="./images/star.png" alt="star">
+                  <div class="customers__slide swiper-slide">
+                    <div class="customers__slider-image">
+                      <img src="./images/userpic3.png" alt="user">
                     </div>
-                    <p class="swiper__name">Cameron Dowman</p>
+                    <div class="customers__slider-text-content">
+                      <p class="customers__slider-title">New Providence is the great UI kit </p>
+                      <p class="customers__slider-review">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+                      <div class="customers__slider-review-stars">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/star.png" alt="star">
+                      </div>
+                      <p class="customers__slider-name">Cameron Dowman</p>
+                      </div>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper__image">
-                    <img src="./images/userpic2.png" alt="user">
-                  </div>
-                  <div class="swiper__text-content">
-                    <p class="swiper__title">New Providence is the great UI kit </p>
-                    <p class="swiper__review">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
-                    <div class="swiper__review-stars">
-                      <img src="./images/star.png" alt="star">
-                      <img src="./images/star.png" alt="star">
-                      <img src="./images/star.png" alt="star">
-                      <img src="./images/star.png" alt="star">
-                      <img src="./images/star.png" alt="star">
+                  <div class="customers__slide swiper-slide">
+                    <div class="customers__slider-image">
+                      <img src="./images/userpic2.png" alt="user">
                     </div>
-                    <p class="swiper__name">Cameron Dowman</p>
+                    <div class="customers__slider-text-content">
+                      <p class="customers__slider-title">New Providence is the great UI kit </p>
+                      <p class="customers__slider-review">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+                      <div class="customers__slider-review-stars">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/star.png" alt="star">
+                      </div>
+                      <p class="customers__slider-name">Cindy Mellbourne</p>
+                      </div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
+              <div class="customers__slider swiper-pagination"></div>
+              <div class="customers__slider swiper-button-prev"></div>
+              <div class="customers__slider swiper-button-next"></div>
             </div>
           </div>
         </div>
@@ -638,6 +639,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
