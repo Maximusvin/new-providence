@@ -18,11 +18,9 @@ const swiper = new Swiper('.swiper-container', {
     bulletActiveClass: 'swiper_pagination_img-active',
     renderCustom: function (swiper, current, total) {
       imgArr.forEach(item => {
-        console.log(item);
         item.classList.remove('swiper_pagination_img-active');
       });
       imgArr[current - 1].classList.add('swiper_pagination_img-active');
-      console.dir(imgRef.children);
     },
   },
   navigation: {
