@@ -8,12 +8,38 @@
     border-bottom: 1px solid rgba(38, 39, 45, 0.051);
     display: flex;
     justify-content: space-around;
+
+    @include for-size(tablet) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     width: 500px;
     padding-top: 95px;
     position: relative;
+
+    @include for-size(desktop) {
+      width: 450px;
+    }
+
+    @include for-size(big-tablet) {
+      width: 350px;
+    }
+
+    @include for-size(tablet) {
+      width: 100%;
+    }
+
+    @include for-size(mobile) {
+      max-width: 576px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @include for-size(tablet) {
+      margin-bottom: 70px;
+    }
   }
 
   &__item::before {
