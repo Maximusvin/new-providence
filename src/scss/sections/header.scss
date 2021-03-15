@@ -22,20 +22,16 @@
     url('./../images/intro-bc.png');
 
   background-size: cover;
-  &::before{
-    content: '';
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 110px;
-    position: fixed;
-    z-index: 102;
-    background-color: #a4b5c1;
+
+  &__logo{
+    margin-left: 90px;
+    @include for-size(big-tablet){
+      margin-left: 0;
+    }
+    &.active{
+      display: none;
+    }
   }
-  // &__inner{
-  //   position: relative;
-  //   z-index: 6;
-  // }
   &__navigation {
     display: flex;
     justify-content: space-between;
@@ -43,21 +39,21 @@
     width: 100%;
     padding-top: 35px;
     font-size: 16px;
-    max-width: 1200px;
-    position: fixed;
     top: 0;
     z-index: 103;
     @media (max-width: 1200px) {
-      padding: 40px 40px;
     }
-    @include for-size(tablet){
+    &.active{
+      display: block;
       position: fixed;
-      top: 0;
       left: 0;
+      top: 0;
       width: 100%;
-      // height: 100%;
-      // z-index: 101;
-      // background-color: #cbddea;
+      height: 100%;
+      z-index: 110;
+      background-color:#eaf3ff;
+      padding: 40px 40px;
+      margin: 0 auto;
     }
   }
   //БУРГЕР-МЕНЮ
@@ -67,41 +63,52 @@
     width: 20px;
     height: 12px;
     margin-right: 30px;
+    cursor: pointer;
+    &.hidden{
+      display: none;
+    }
     @include for-size(tablet){
-
+      position: fixed;
+    }
+    // &.active{
+    //   //зміна на --- на Х
+    // }
+    & span {
+      background-color: #1b1c1e;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 5px;
+    }
+    &::before {
+      content: '';
+      background-color: #1b1c1e;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 0;
+    }
+    &::after {
+      content: '';
+      background-color: #1b1c1e;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
     }
   }
-  &__burger span {
-    background-color: #1b1c1e;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    top: 5px;
-  }
-  &__burger::before {
-    content: '';
-    background-color: #1b1c1e;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    top: 0;
-  }
-  &__burger::after {
-    content: '';
-    background-color: #1b1c1e;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-  }
+  
   &__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #1b1c1e;
+    &.active{
+      display: block;
+    }
     @include for-size(tablet){
       z-index: 0;
     }
@@ -110,85 +117,131 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     @include for-size(tablet){
       display: none;
     }
-  }
-  &__menu-list li {
-    padding-right: 40px;
-  }
-  &__menu-list li:last-child {
-    padding-right: unset;
-  }
-  &__menu-list a:hover {
-    color: #9f9fa1;
-    transition: 0.1s;
-  }
-  &__menu-list a{
-    color: #1b1c1e;
+    &.active{
+      display: block;
+      margin: 0 auto;
+      max-width: 300px;
+    }
+    &.active li{
+      font-size: 25px;
+    }
+    & li {
+      padding-right: 40px;
+    }
+    & li:last-child {
+      padding-right: unset;
+    }
+    & a:hover {
+      color: #9f9fa1;
+      transition: 0.1s;
+    }
+    & a{
+      color: #1b1c1e;
+    }
   }
   &__info-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-  }
-  &__info-list li {
-    padding-right: 40px;
+
     @include for-size(tablet){
       display: none;
     }
-  }
-  &__info-list li:last-child {
-    padding-right: unset;
-    color: #fff;
-    @include for-size(tablet){
+
+    &.active{
+      font-size: 25px;
       display: block;
+      margin: 0 auto;
+      max-width: 300px;
+      padding-bottom: 30px;
+    }
+    &.active li{
+      font-size: 25px;
+    }
+    & li {
+      padding-right: 40px;
+    }
+    & li:last-child {
+      padding-right: unset;
+    }
+    & li:last-child {
+      padding-right: unset;
+    }
+    & a:hover {
+      color: #9f9fa1;
+      transition: 0.1s;
+    }
+    & a{
+      color: #1b1c1e;
     }
   }
-  &__info-list li:last-child a {
-    color: #fff;
-  }
-  &__info-list li:last-child a:hover {
-    color: #267df4;
-    transition: .2s;
-  }
-  &__info-list a:hover {
-    color: #9f9fa1;
-    transition: 0.1s;
-  }
-  &__info-list a{
-    color: #1b1c1e;
-  }
-  &__info-link {
+ 
+  &__info-btn {
     color: #fff;
     background-color: #267df4;
     padding: 15px 30px 15px 50px;
     border-radius: 40px;
     position: relative;
     transition: .2s;
+    &.hidden{
+      display: none;
+    }
+
+    @include for-size(tablet) {
+      padding: 10px 15px 10px 43px;   
+    }
+    &::before {
+      content: url('./../images/apple-icon.png');
+      left: 20px;
+      top: 50%;
+      z-index: 1;
+      position: absolute;
+      transform: translate3d(0, -50%, 0);
+    }
+    &:hover{
+      background-color: #fff;
+      color: #267df4;
+      border: 1px solid #267df4;
+      transition: .2s;
+      transform: scale(1.09);
+    }
+  
+    &:hover::before {
+      content: url('./../images/apple-icon-blue.png');
+      left: 20px;
+      top: 50%;
+      z-index: 1;
+      position: absolute;
+      transform: translate3d(0, -50%, 0);
+      
+    }
   }
-  &__info-link::before {
-    content: url('./../images/apple-icon.png');
-    left: 20px;
-    top: 50%;
-    z-index: 1;
-    position: absolute;
-    transform: translate3d(0, -50%, 0);
-  }
-  &__info-link:hover{
+
+  &__close-btn{
+    display: none;
+    color: #fff;
+    background-color: #267df4;
+    padding: 15px 30px;
+    border:unset;
+    border-radius: 40px;
+    position: relative;
+    transition: .2s;
+    cursor: pointer;
+    &.active{
+      display: block;
+      margin: 0 auto;
+    }
+      &:hover{
     background-color: #fff;
+    color: #267df4;
+    border: 1px solid #267df4;
     transition: .2s;
     transform: scale(1.09);
   }
-
-  &__info-link:hover::before {
-    content: url('./../images/apple-icon-blue.png');
-    left: 20px;
-    top: 50%;
-    z-index: 1;
-    position: absolute;
-    transform: translate3d(0, -50%, 0);
   }
   //INFO
   &__info {
@@ -229,25 +282,26 @@
     cursor: pointer;
 
     position: relative;
+    &:hover{
+      background-color: #267df4;
+      color: #fff;
+      transition: .2s;
+      transform: scale(1.09);
+    }
+    &:hover::before{
+      content: url('./../images/play-btn-white.png');
+      position: absolute;
+      left: 30px;
+      top: 18px;
+      z-index: 2;
+    }
+    &::before {
+      content: url('./../images/play-btn.png');
+      position: absolute;
+      left: 30px;
+      top: 18px;
+      z-index: 2;
+    }
   }
-  &__btn:hover{
-    background-color: #267df4;
-    color: #fff;
-    transition: .2s;
-    transform: scale(1.09);
-  }
-  &__btn:hover::before{
-    content: url('./../images/play-btn-white.png');
-    position: absolute;
-    left: 30px;
-    top: 18px;
-    z-index: 2;
-  }
-  &__btn::before {
-    content: url('./../images/play-btn.png');
-    position: absolute;
-    left: 30px;
-    top: 18px;
-    z-index: 2;
-  }
+
 }
