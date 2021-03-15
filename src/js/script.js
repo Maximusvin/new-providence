@@ -2,4 +2,5 @@
 //js modules
 
 import './plan';
+import './interface';
 import './customers';
