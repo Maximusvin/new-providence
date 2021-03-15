@@ -30,10 +30,6 @@
     @include for-size(tablet) {
       width: 100%;
     }
-
-    @include for-size(mobile) {
-      max-width: 576px;
-    }
   }
 
   &__item:not(:last-child) {
