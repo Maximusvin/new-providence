@@ -149,6 +149,10 @@
   &__info-list li:last-child a {
     color: #fff;
   }
+  &__info-list li:last-child a:hover {
+    color: #267df4;
+    transition: .2s;
+  }
   &__info-list a:hover {
     color: #9f9fa1;
     transition: 0.1s;
@@ -162,9 +166,24 @@
     padding: 15px 30px 15px 50px;
     border-radius: 40px;
     position: relative;
+    transition: .2s;
   }
   &__info-link::before {
     content: url('./../images/apple-icon.png');
+    left: 20px;
+    top: 50%;
+    z-index: 1;
+    position: absolute;
+    transform: translate3d(0, -50%, 0);
+  }
+  &__info-link:hover{
+    background-color: #fff;
+    transition: .2s;
+    transform: scale(1.09);
+  }
+
+  &__info-link:hover::before {
+    content: url('./../images/apple-icon-blue.png');
     left: 20px;
     top: 50%;
     z-index: 1;
@@ -206,8 +225,23 @@
     border-radius: 40px;
     background-color: #f0f2f3;
     font-size: 16px;
+    transition: .2s;
+    cursor: pointer;
 
     position: relative;
+  }
+  &__btn:hover{
+    background-color: #267df4;
+    color: #fff;
+    transition: .2s;
+    transform: scale(1.09);
+  }
+  &__btn:hover::before{
+    content: url('./../images/play-btn-white.png');
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    z-index: 2;
   }
   &__btn::before {
     content: url('./../images/play-btn.png');
