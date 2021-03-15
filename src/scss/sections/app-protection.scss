@@ -71,7 +71,6 @@
   }
 
   &__title {
-    font-size: 2.1rem;
     margin-bottom: 3.3rem;
   }
 
@@ -114,8 +113,4 @@
   }
 }
 
-.shadow {
-  &__app-protection {
-    filter: drop-shadow(-12px 30px 30px rgba(106, 119, 145, 0.15)) drop-shadow(1px 7px 5px rgba(61, 61, 62, 0.35));
-  }
-}
+

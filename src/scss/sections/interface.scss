@@ -1,4 +1,92 @@
-.swiper-container {
-  width: 300px;
-  height: 600px;
+.interface {
+  background-color: #F5F5F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.8rem 0 3rem 0;
+
+  &__title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title-line {
+    background-color: #267DF4;
+    margin: 1.7rem 0 2.04rem 0;
+    width: 50px;
+    height: 1.8px;
+  }
+
+  &__background {
+    height: 770px;
+    background-image: url("../images/iPhone-screen.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: 0 9.5rem;
+    width: 299px;
+  }
+
+  &__slider-container {
+    display: flex;
+    min-width: 0;
+    width: 102.3%;
+    height: 550px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    margin: 5.8rem 0 2rem -32px;
+    padding: 1rem 0 0 0;
+
+  }
+
+  &__slider {
+    background-color: #267df4;
+    height: 455px;
+    width: 253.6px;
+
+
+
+    &-slides {
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 12px;
+      position: fixed;
+      background-size: cover;
+    }
+
+    &-slides.swiper-slide-active{
+      margin: 0 39px;
+      border: 1px solid #e5e5e5;
+      border-radius: 3px;
+      filter: none;
+    }
+    &-slides.swiper-slide-prev{
+      margin: 0 0 0 12px;
+    }
+    &-slides.swiper-slide-next{
+      margin: 0 12px 0 0;
+    }
+
+    &-slide1 {
+      background-image: url("../images/iPhone_screenshot-1.png");
+    }
+
+    &-slide2 {
+      background-image: url("../images/iPhone_screenshot-2.png");
+    }
+
+    &-slide3 {
+      background-image: url("../images/iPhone_screenshot-3.png");
+    }
+
+    &-slide4 {
+      background-image: url("../images/iPhone_screenshot-4.png");
+    }
+
+    &-slide5 {
+      background-image: url("../images/iPhone_screenshot-5.png");
+    }
+  }
 }
