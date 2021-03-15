@@ -96,9 +96,9 @@ li {
   padding: 0 15px 0 15px;
   max-width: 1200px;
 
-  @include for-size(desktop) {
-    max-width: 1280px;
-  }
+  // @include for-size(desktop) {
+  //   max-width: 1280px;
+  // }
 
   @include for-size(big-tablet) {
     max-width: 992px;

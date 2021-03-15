@@ -31,6 +31,9 @@
     position: fixed;
     z-index: 102;
     background-color: #a4b5c1;
+    @include for-size(tablet){
+      height: 80px;
+    }
   }
   // &__inner{
   //   position: relative;
@@ -50,14 +53,18 @@
     @media (max-width: 1200px) {
       padding: 40px 40px;
     }
+    @include for-size(desktop) {
+      padding: 35px 30px 0 30px;
+    }
     @include for-size(tablet){
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      // height: 100%;
-      // z-index: 101;
-      // background-color: #cbddea;
+      padding: 15px;
+      height: 100%;
+      z-index: 101;
+      background-color: #cbddea;
     }
   }
   //БУРГЕР-МЕНЮ
