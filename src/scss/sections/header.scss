@@ -124,6 +124,7 @@
     &.active{
       display: block;
       margin: 0 auto;
+      max-width: 300px;
     }
     &.active li{
       font-size: 25px;
@@ -155,6 +156,7 @@
       font-size: 25px;
       display: block;
       margin: 0 auto;
+      max-width: 300px;
       padding-bottom: 30px;
     }
     &.active li{
@@ -231,6 +233,7 @@
     cursor: pointer;
     &.active{
       display: block;
+      margin: 0 auto;
     }
       &:hover{
     background-color: #fff;
