@@ -4,6 +4,11 @@
   background-color: #fff;
   position: relative;
 
+  @include for-size(mobile) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__background {
     position: absolute;
     width: 52%;
@@ -19,6 +24,11 @@
     @include for-size(tablet) {
       width: 30%;
     }
+
+    @include for-size(mobile) {
+      display: none;
+      opacity: 0;
+    }
   }
 
   &__title {
@@ -27,12 +37,24 @@
     color: #26272d;
     width: 300px;
     margin-bottom: 60px;
+
+    @include for-size(mobile) {
+      font-size: 34px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
 
   &__content-wrap {
     width: 470px;
     color: #8c8f94;
     margin-bottom: 65px;
+
+    @include for-size(mobile) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__content {
@@ -49,6 +71,10 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     margin-bottom: 30px;
+
+    @include for-size(mobile) {
+      text-align: center;
+    }
   }
 
   &__logo-wrap {
@@ -56,8 +82,18 @@
     align-items: center;
   }
 
+  &__img {
+    @include for-size(mobile) {
+      width: 120px;
+    }
+  }
+
   &__img:not(:last-child) {
     margin-right: 30px;
+
+    @include for-size(mobile) {
+      margin-right: 20px;
+    }
   }
 
   &__word-map {
