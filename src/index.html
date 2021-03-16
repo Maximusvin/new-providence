@@ -9,34 +9,49 @@
     <title>New Providence</title>
   </head>
 
-  <body>
+  <body class="body">
     <!-- Юля -->
     <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
+          <div class="burger"></div>
           <nav class="header__navigation">
-            <div class="header__menu">
+            <!-- Max -->
+            <div class="burger--btn">
               <div class="header__burger">
-                <a href="#">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="header__menu">
+              <!-- juliya -->
+              <div class="header__burger1">
+                <a href="#header">
                   <span></span>
                 </a>
               </div>
 
               <ul class="header__menu-list">
-                <li>
+                <li class="js-link">
                   <a href="#">Tour</a>
                 </li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li class="js-link"><a href="#features">Features</a></li>
+                <li class="js-link"><a href="#">Pricing</a></li>
               </ul>
             </div>
-            <a href="#header" class="logo header__logo">
+
+            <a href="#header" class="logo header__logo js-link">
               <span class="logo__bold">New</span>Providence
             </a>
+
             <ul class="header__info-list">
-              <li><a class="info-list-item" href="#">Help</a></li>
-              <li><a class="info-list-item" href="#">Contacts</a></li>
-              <li>
+              <li class="js-link">
+                <a class="info-list-item" href="#">Help</a>
+              </li>
+              <li class="js-link">
+                <a class="info-list-item" href="#">Contacts</a>
+              </li>
+              <li class="js-link">
                 <a href="#" class="header__info-btn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -56,8 +71,8 @@
                 </a>
               </li>
             </ul>
-            <button class="header__close-btn">Close</button>
           </nav>
+
           <div class="header__info">
             <h1 class="visually-hidden">New Providence</h1>
             <p class="header__title">What happens tomorrow?</p>
