@@ -13,6 +13,10 @@
     color: #26292c;
     line-height: 1.238;
     margin-bottom: 45px;
+
+    @include for-size(mobile) {
+      font-size: 34px;
+    }
   }
 
   &__form {
@@ -41,6 +45,10 @@
     border-radius: 40px;
     padding-left: 25px;
 
+    @include for-size(mobile) {
+      width: 100%;
+    }
+
     &::placeholder {
       color: rgba(38, 41, 44, 0.7);
       text-indent: 0px;
@@ -66,6 +74,13 @@
     font-size: 16px;
     transition: all 0.2s linear;
 
+    @include for-size(mobile) {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 9px;
+      padding-bottom: 11px;
+    }
+
     &:hover,
     &:focus {
       background-color: #267df4;
@@ -79,5 +94,10 @@
     color: rgb(140, 143, 148);
     margin-bottom: 21px;
     padding-bottom: 83px;
+
+    @include for-size(mobile) {
+      padding-bottom: 50px;
+      margin-bottom: 0;
+    }
   }
 }

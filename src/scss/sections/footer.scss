@@ -2,6 +2,10 @@
   padding-top: 88px;
   background-color: #fff;
 
+  @include for-size(tablet) {
+    padding-top: 50px;
+  }
+
   &__up {
     display: flex;
     justify-content: space-between;
@@ -101,6 +105,10 @@
     @include for-size(tablet) {
       width: 100%;
     }
+
+    @include for-size(mobile) {
+      flex-direction: column;
+    }
   }
 
   &__menu--item {
@@ -108,6 +116,10 @@
 
     @include for-size(big-tablet) {
       width: 140px;
+    }
+
+    @include for-size(mobile) {
+      width: 100%;
     }
   }
 
