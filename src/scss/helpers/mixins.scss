@@ -1,7 +1,7 @@
 @mixin for-size($size) {
   @if $size == desktop {
     // 993-1282px
-    @media (max-width: 1282px) {
+    @media (max-width: 1283px) {
       @content;
     }
   } @else if $size == big-tablet {
@@ -51,7 +51,7 @@
   cursor: pointer;
   white-space: nowrap;
   &:hover {
-    padding: 0 5.5em 0.1em 1.6em
+    padding: 0 5.5em 0.1em 1.6em;
   }
   &:hover > .fa-arrow-right {
     display: inline-block;
@@ -70,18 +70,18 @@
   @if $color == transparent {
     color: #000000;
     background-color: #ffffff;
-    border-color: #E6E6E6;
+    border-color: #e6e6e6;
   } @else if $color == blueTransparent {
     color: #000000;
     background-color: #ffffff;
-    border-color: #267DF4;
+    border-color: #267df4;
   } @else if $color == blue {
     color: #ffffff;
-    background-color: #267DF4;
+    background-color: #267df4;
     border: 0;
   } @else if $color == green {
     color: #ffffff;
-    background-color: #6FC754;
+    background-color: #6fc754;
     border: 0;
   }
 
