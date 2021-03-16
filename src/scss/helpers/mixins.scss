@@ -1,7 +1,7 @@
 @mixin for-size($size) {
   @if $size == desktop {
     // 993-1282px
-    @media (max-width: 1282px) {
+    @media (max-width: 1283px) {
       @content;
     }
   } @else if $size == big-tablet {
@@ -85,9 +85,9 @@
     border: 0;
   }
 
-  @media (min-width: 769px) and (max-width: 1282px) {
+  @media (min-width: 769px) and (max-width: 1283px) {
     height: 32px;
-    padding: 0 1.6em;
+    padding: 0 1.8em;
     border-radius: 16px;
     font-size: 0.8rem;
     &:hover {
