@@ -24,9 +24,9 @@
   background-size: cover;
 
   &__logo{
-    margin-left: 90px;
+    margin-left: 8%;
     @include for-size(big-tablet){
-      margin-left: 0;
+      margin-left: 3%;
     }
     &.active{
       display: none;
@@ -41,8 +41,6 @@
     font-size: 16px;
     top: 0;
     z-index: 103;
-    @media (max-width: 1200px) {
-    }
     &.active{
       display: block;
       position: fixed;
@@ -185,13 +183,16 @@
     color: #fff;
     background-color: #267df4;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 25px 10px 43px;
     border-radius: 40px;
     position: relative;
     transition: .2s;
     &-img{
       fill: #fff;
-      margin-right: 10px;
+      position: absolute;
+      left: 15px;
+      top: 48%;
+      transform: translateY(-52%);
     }
     &:hover svg{
       fill: #267df4;
@@ -202,16 +203,8 @@
     }
 
     @include for-size(tablet) {
-      padding: 10px 15px 10px 43px;   
+      padding: 10px 15px;   
     }
-    // &::before {
-    //   content: url('./../images/apple-icon.png');
-    //   left: 20px;
-    //   top: 50%;
-    //   z-index: 1;
-    //   position: absolute;
-    //   transform: translate3d(0, -50%, 0);
-    // }
     &:hover{
       background-color: #fff;
       color: #267df4;
@@ -258,10 +251,6 @@
     padding-bottom: 40px;
     font-size: 62px;
     font-family: 'Varela Round';
-
-    // @include for-size(tablet) {
-    //     font-size: 22px;
-    //   }
   }
   &__description {
     padding-bottom: 60px;
