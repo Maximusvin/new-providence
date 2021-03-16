@@ -24,9 +24,10 @@
   background-size: cover;
 
   &__logo{
-    margin-left: 8%;
+    margin-left: 2%;
     @include for-size(big-tablet){
-      margin-left: 3%;
+      margin-left: 0;
+      padding: 0 15px;
     }
     &.active{
       display: none;
@@ -64,6 +65,9 @@
     cursor: pointer;
     &.hidden{
       display: none;
+    }
+    @include for-size(big-tablet){
+      margin-right: 10px;
     }
     @include for-size(tablet){
       position: fixed;
@@ -129,6 +133,9 @@
     }
     & li {
       padding-right: 40px;
+      @include for-size(big-tablet){
+        padding-right: 20px;
+      }
     }
     & li:last-child {
       padding-right: unset;
@@ -146,10 +153,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    @include for-size(tablet){
-      display: none;
-    }
 
     &.active{
       font-size: 25px;
@@ -161,11 +164,18 @@
     &.active li{
       font-size: 25px;
     }
-    & li {
-      padding-right: 40px;
+    & li .info-list-item{
+      padding-right:40px;
+      color: #1b1c1e;
+      @include for-size(big-tablet){
+        padding-right: 20px;
+      }
+      @include for-size(tablet){
+        display: none;
+      }
     }
-    & li:last-child {
-      padding-right: unset;
+    & li .info-list-item:hover{
+      text-decoration: underline;
     }
     & li:last-child {
       padding-right: unset;
@@ -174,9 +184,7 @@
       color: #267df4;
       transition: 0.1s;
     }
-    & a{
-      color: #1b1c1e;
-    }
+
   }
  
   &__info-btn {
@@ -187,12 +195,19 @@
     border-radius: 40px;
     position: relative;
     transition: .2s;
-    &-img{
+    text-decoration: none;
+    @include for-size(big-tablet){
+      padding: 7px 15px 7px 30px;
+    }
+    & svg{
       fill: #fff;
       position: absolute;
       left: 15px;
       top: 48%;
       transform: translateY(-52%);
+      @include for-size(big-tablet){
+        width: 13%;
+      }
     }
     &:hover svg{
       fill: #267df4;
@@ -201,7 +216,9 @@
     &.hidden{
       display: none;
     }
-
+    @include for-size(big-tablet){
+      font-size: 12px;
+    }
     @include for-size(tablet) {
       padding: 10px 15px;   
     }
