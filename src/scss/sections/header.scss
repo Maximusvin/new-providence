@@ -24,9 +24,14 @@
   background-size: cover;
 
   &__logo{
-    margin-left: 90px;
+    margin-left: 2%;
     @include for-size(big-tablet){
       margin-left: 0;
+      padding: 0 15px;
+    }
+    @include for-size(tablet){
+      margin-left: 86px;
+      padding: 0;
     }
     &.active{
       display: none;
@@ -41,8 +46,6 @@
     font-size: 16px;
     top: 0;
     z-index: 103;
-    @media (max-width: 1200px) {
-    }
     &.active{
       display: block;
       position: fixed;
@@ -67,8 +70,12 @@
     &.hidden{
       display: none;
     }
+    @include for-size(big-tablet){
+      margin-right: 20px;
+    }
     @include for-size(tablet){
       position: fixed;
+      margin-right: 0;
     }
     // &.active{
     //   //зміна на --- на Х
@@ -131,6 +138,10 @@
     }
     & li {
       padding-right: 40px;
+      @include for-size(big-tablet){
+        padding-right: 20px;
+        font-size: 12px;
+      }
     }
     & li:last-child {
       padding-right: unset;
@@ -148,10 +159,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    @include for-size(tablet){
-      display: none;
-    }
 
     &.active{
       font-size: 25px;
@@ -163,11 +170,19 @@
     &.active li{
       font-size: 25px;
     }
-    & li {
-      padding-right: 40px;
+    & li .info-list-item{
+      padding-right:40px;
+      color: #1b1c1e;
+      @include for-size(big-tablet){
+        padding-right: 20px;
+        font-size: 12px;
+      }
+      @include for-size(tablet){
+        display: none;
+      }
     }
-    & li:last-child {
-      padding-right: unset;
+    & li .info-list-item:hover{
+      text-decoration: underline;
     }
     & li:last-child {
       padding-right: unset;
@@ -176,22 +191,38 @@
       color: #267df4;
       transition: 0.1s;
     }
-    & a{
-      color: #1b1c1e;
-    }
+
   }
  
   &__info-btn {
     color: #fff;
     background-color: #267df4;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 25px 10px 43px;
     border-radius: 40px;
     position: relative;
     transition: .2s;
-    &-img{
+    text-decoration: none;
+    @include for-size(big-tablet){
+      font-size: 12px;
+      padding: 7px 15px 7px 30px;
+    }
+    @include for-size(tablet){
+      left: 12px;
+      font-size: 16px;
+    }
+    & svg{
       fill: #fff;
-      margin-right: 10px;
+      position: absolute;
+      left: 15px;
+      top: 48%;
+      transform: translateY(-52%);
+      @include for-size(big-tablet){
+        width: 13%;
+      }
+      @include for-size(tablet){
+        left: 12px;
+      }
     }
     &:hover svg{
       fill: #267df4;
@@ -200,18 +231,6 @@
     &.hidden{
       display: none;
     }
-
-    @include for-size(tablet) {
-      padding: 10px 15px 10px 43px;   
-    }
-    // &::before {
-    //   content: url('./../images/apple-icon.png');
-    //   left: 20px;
-    //   top: 50%;
-    //   z-index: 1;
-    //   position: absolute;
-    //   transform: translate3d(0, -50%, 0);
-    // }
     &:hover{
       background-color: #fff;
       color: #267df4;
@@ -258,15 +277,20 @@
     padding-bottom: 40px;
     font-size: 62px;
     font-family: 'Varela Round';
-
-    // @include for-size(tablet) {
-    //     font-size: 22px;
-    //   }
+    @include for-size(tablet){
+      font-size: 55px;
+    }
+    @include for-size(mobile){
+      font-size: 43px;
+    }
   }
   &__description {
     padding-bottom: 60px;
     font-size: 20px;
     color: #8c8f94;
+    @include for-size(tablet){
+      padding-bottom: 50px;
+    }
   }
   &__image img {
     margin: 0 auto;

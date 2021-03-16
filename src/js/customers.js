@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper-container', {
       imgArr.forEach(item => {
         item.classList.remove('swiper_pagination_img-active');
       });
-      imgArr[current - 1].classList.add('swiper_pagination_img-active');
+      imgArr[current-1].classList.add('swiper_pagination_img-active');
     },
   },
   navigation: {
