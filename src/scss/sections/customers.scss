@@ -44,8 +44,12 @@
       justify-content: center;
       padding: 30px 0 60px 0;
     }
-    &-review-stars img {
+    &-review-stars svg {
       padding-right: 10px;
+      fill: #f2bc3b;
+      &.unactive{
+        fill: #26272d;
+      }
     }
     &-review-stars img:last-child {
       padding-right: unset;

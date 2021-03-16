@@ -136,7 +136,8 @@
       padding-right: unset;
     }
     & a:hover {
-      color: #9f9fa1;
+      color: #267df4;
+      text-decoration: underline;
       transition: 0.1s;
     }
     & a{
@@ -147,7 +148,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     @include for-size(tablet){
       display: none;
     }
@@ -172,7 +173,7 @@
       padding-right: unset;
     }
     & a:hover {
-      color: #9f9fa1;
+      color: #267df4;
       transition: 0.1s;
     }
     & a{
@@ -183,10 +184,19 @@
   &__info-btn {
     color: #fff;
     background-color: #267df4;
-    padding: 15px 30px 15px 50px;
+    align-items: center;
+    padding: 10px 30px;
     border-radius: 40px;
     position: relative;
     transition: .2s;
+    &-img{
+      fill: #fff;
+      margin-right: 10px;
+    }
+    &:hover svg{
+      fill: #267df4;
+      margin-right: 10px;
+    }
     &.hidden{
       display: none;
     }
@@ -194,30 +204,19 @@
     @include for-size(tablet) {
       padding: 10px 15px 10px 43px;   
     }
-    &::before {
-      content: url('./../images/apple-icon.png');
-      left: 20px;
-      top: 50%;
-      z-index: 1;
-      position: absolute;
-      transform: translate3d(0, -50%, 0);
-    }
+    // &::before {
+    //   content: url('./../images/apple-icon.png');
+    //   left: 20px;
+    //   top: 50%;
+    //   z-index: 1;
+    //   position: absolute;
+    //   transform: translate3d(0, -50%, 0);
+    // }
     &:hover{
       background-color: #fff;
       color: #267df4;
-      border: 1px solid #267df4;
+      box-shadow: 0 16px 34px -4px #5c5f65;
       transition: .2s;
-      transform: scale(1.09);
-    }
-  
-    &:hover::before {
-      content: url('./../images/apple-icon-blue.png');
-      left: 20px;
-      top: 50%;
-      z-index: 1;
-      position: absolute;
-      transform: translate3d(0, -50%, 0);
-      
     }
   }
 
@@ -225,7 +224,7 @@
     display: none;
     color: #fff;
     background-color: #267df4;
-    padding: 15px 30px;
+    padding: 10px 15px;
     border:unset;
     border-radius: 40px;
     position: relative;
@@ -274,7 +273,7 @@
   }
   &__btn {
     border: 1px solid #dadcdf;
-    padding: 20px 45px 20px 65px;
+    padding: 15px 30px;
     border-radius: 40px;
     background-color: #f0f2f3;
     font-size: 16px;
@@ -282,25 +281,20 @@
     cursor: pointer;
 
     position: relative;
+
+    & svg{
+      fill: #26272d;
+      margin-right: 10px;
+    }
     &:hover{
       background-color: #267df4;
       color: #fff;
       transition: .2s;
       transform: scale(1.09);
-    }
-    &:hover::before{
-      content: url('./../images/play-btn-white.png');
-      position: absolute;
-      left: 30px;
-      top: 18px;
-      z-index: 2;
-    }
-    &::before {
-      content: url('./../images/play-btn.png');
-      position: absolute;
-      left: 30px;
-      top: 18px;
-      z-index: 2;
+      & svg{
+        fill:  #fff;
+        margin-right: 10px;
+      }
     }
   }
 
