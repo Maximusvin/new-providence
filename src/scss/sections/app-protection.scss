@@ -120,7 +120,7 @@
     position: absolute;
     margin: 0 15.2rem;
 
-    @media  (max-width: 1283px) {
+    @include for-size(desktop) {
       margin: 0 10.9rem;
     }
 
