@@ -10,6 +10,9 @@
     flex-direction: column;
     align-items: center;
   }
+  &__title{
+    text-align: center;
+  }
 
   &__title-line {
     background-color: #267DF4;
@@ -54,11 +57,8 @@
   }
 
   &__slider {
-    background-color: #267df4;
     height: 455px;
     width: 253.6px;
-
-
 
     &-slides {
       background-position: center;

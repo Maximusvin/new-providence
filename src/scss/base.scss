@@ -130,13 +130,12 @@ li {
 }
 
 .block-title {
-  white-space: nowrap;
   font-size: 42px;
   color: #26272d;
+
   @media (min-width: 769px) and (max-width: 1282px) {
     font-size: 2.05rem;
   }
-
   &__subtitle {
     text-transform: uppercase;
     font-size: 12px;
