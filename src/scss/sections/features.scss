@@ -20,11 +20,11 @@
     position: relative;
 
     @include for-size(desktop) {
-      width: 450px;
+      width: 400px;
     }
 
     @include for-size(big-tablet) {
-      width: 350px;
+      width: 315px;
     }
 
     @include for-size(tablet) {

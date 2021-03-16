@@ -7,14 +7,34 @@
     justify-content: space-between;
     padding-bottom: 129px;
     border-bottom: 1px solid rgba(38, 41, 44, 0.05);
+
+    @include for-size(tablet) {
+      flex-direction: column;
+      padding-bottom: 60px;
+    }
   }
 
   &__content-wrap {
     width: 270px;
+
+    @include for-size(big-tablet) {
+      width: 200px;
+    }
+
+    @include for-size(tablet) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
 
   &__logo {
     margin-bottom: 33px;
+
+    @include for-size(tablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__content {
@@ -34,12 +54,21 @@
     padding-top: 6px;
     padding-bottom: 11px;
     margin-bottom: 40px;
+
+    @include for-size(tablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__social-wrap {
     display: flex;
     align-items: center;
     width: 100%;
+
+    @include for-size(tablet) {
+      justify-content: center;
+    }
   }
 
   &__social-item:not(:last-child) {
@@ -64,10 +93,22 @@
     display: flex;
     justify-content: space-between;
     width: 500px;
+
+    @include for-size(big-tablet) {
+      width: 440px;
+    }
+
+    @include for-size(tablet) {
+      width: 100%;
+    }
   }
 
   &__menu--item {
     width: 170px;
+
+    @include for-size(big-tablet) {
+      width: 140px;
+    }
   }
 
   &__menu h3 {
@@ -114,6 +155,10 @@
   &__column-right {
     display: flex;
     align-items: center;
+
+    @include for-size(tablet) {
+      flex-direction: column;
+    }
   }
 
   &__column-right p {

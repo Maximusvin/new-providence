@@ -11,6 +11,14 @@
     background-image: url('../images/world-map.png');
     background-repeat: no-repeat;
     right: 0;
+
+    @include for-size(big-tablet) {
+      width: 45%;
+    }
+
+    @include for-size(tablet) {
+      width: 30%;
+    }
   }
 
   &__title {

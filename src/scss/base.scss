@@ -94,23 +94,39 @@ li {
 .container {
   margin: 0 auto;
   padding: 0 15px 0 15px;
-  max-width: 1200px;
+  width: 1200px;
 
   @include for-size(desktop) {
-    max-width: 1100px;
+    width: 940px;
   }
 
   @include for-size(big-tablet) {
-    max-width: 940px;
+    width: 700px;
   }
 
   @include for-size(tablet) {
-    max-width: 710px;
+    width: 520px;
   }
 
   @include for-size(mobile) {
-    max-width: 90%;
+    width: 90%;
   }
+
+  // @include for-size(desktop) {
+  //   max-width: 1100px;
+  // }
+
+  // @include for-size(big-tablet) {
+  //   max-width: 940px;
+  // }
+
+  // @include for-size(tablet) {
+  //   max-width: 710px;
+  // }
+
+  // @include for-size(mobile) {
+  //   max-width: 90%;
+  // }
 }
 
 .block-title {
