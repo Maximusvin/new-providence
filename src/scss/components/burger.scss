@@ -1,0 +1,132 @@
+.burger--btn {
+  display: none;
+  align-items: center;
+  width: rem(30);
+  height: rem(30);
+  cursor: pointer;
+  position: relative;
+  z-index: 50;
+
+  @include for-size(mobile) {
+    display: flex;
+  }
+}
+
+.burger {
+  display: block;
+  width: rem(30);
+  height: rem(12);
+  position: absolute;
+
+  &::before,
+  &::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: rem(2);
+    left: 0;
+    transition: all 0.2s linear;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  span {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: rem(2);
+    top: rem(5);
+    left: 0;
+    transition: all 0.2s linear;
+  }
+}
+
+.burger--btn.active .burger {
+  &::before {
+    transform: rotate(45deg);
+    background-color: #fff;
+    top: rem(5);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    background-color: #fff;
+    bottom: rem(5);
+  }
+
+  span {
+    transform: scale(0);
+  }
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.burger {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: rem(25);
+  z-index: 50;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+
+  @include for-size(tablet) {
+    padding-top: rem(35);
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.burger.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu--burger {
+  display: block;
+  font-size: rem(20);
+  width: rem(280);
+  padding-left: rem(15);
+  margin-bottom: rem(60);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(tablet) {
+    width: rem(320);
+    font-size: rem(24);
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: rem(20);
+  }
+
+  .menu__link {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: rgb(128, 42, 42);
+    }
+  }
+}
+// Burger END
