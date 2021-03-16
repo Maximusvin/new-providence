@@ -30,56 +30,34 @@
       padding: 0 15px;
     }
     @include for-size(tablet) {
-      margin-left: 86px;
       padding: 0;
-    }
-    &.active {
-      display: none;
-    }
-  }
-  &__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-top: 35px;
-    font-size: 16px;
-    top: 0;
-    z-index: 103;
-    &.active {
-      display: block;
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 110;
-      background-color: #eaf3ff;
-      padding: 40px 40px;
-      margin: 0 auto;
+      order: 1;
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
+
   //БУРГЕР-МЕНЮ
-  &__burger {
+  &__burger1 {
     display: block;
     position: relative;
     width: 20px;
     height: 12px;
     margin-right: 30px;
     cursor: pointer;
-    &.hidden {
-      display: none;
-    }
+
     @include for-size(big-tablet) {
       margin-right: 20px;
     }
+
     @include for-size(tablet) {
-      position: fixed;
+      display: none;
       margin-right: 0;
+      opacity: 0;
     }
-    // &.active{
-    //   //зміна на --- на Х
-    // }
+
     & span {
       background-color: #1b1c1e;
       position: absolute;
@@ -88,6 +66,7 @@
       left: 0;
       top: 5px;
     }
+
     &::before {
       content: '';
       background-color: #1b1c1e;
@@ -113,13 +92,8 @@
     justify-content: space-between;
     align-items: center;
     color: #1b1c1e;
-    &.active {
-      display: block;
-    }
-    @include for-size(tablet) {
-      z-index: 0;
-    }
   }
+
   &__menu-list {
     display: flex;
     justify-content: space-between;
@@ -128,21 +102,16 @@
     @include for-size(tablet) {
       display: none;
     }
-    &.active {
-      display: block;
-      margin: 0 auto;
-      max-width: 300px;
-    }
-    &.active li {
-      font-size: 25px;
-    }
+
     & li {
       padding-right: 40px;
+
       @include for-size(big-tablet) {
         padding-right: 20px;
         font-size: 12px;
       }
     }
+
     & li:last-child {
       padding-right: unset;
     }
@@ -155,32 +124,26 @@
       color: #1b1c1e;
     }
   }
+
   &__info-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &.active {
-      font-size: 25px;
-      display: block;
-      margin: 0 auto;
-      max-width: 300px;
-      padding-bottom: 30px;
+    @include for-size(tablet) {
+      display: none;
     }
-    &.active li {
-      font-size: 25px;
-    }
+
     & li .info-list-item {
       padding-right: 40px;
       color: #1b1c1e;
+
       @include for-size(big-tablet) {
         padding-right: 20px;
         font-size: 12px;
       }
-      @include for-size(tablet) {
-        display: none;
-      }
     }
+
     & li .info-list-item:hover {
       text-decoration: underline;
     }
@@ -202,14 +165,17 @@
     position: relative;
     transition: 0.2s;
     text-decoration: none;
+
     @include for-size(big-tablet) {
       font-size: 12px;
       padding: 7px 15px 7px 30px;
     }
+
     @include for-size(tablet) {
       left: 12px;
       font-size: 16px;
     }
+
     & svg {
       fill: #fff;
       position: absolute;
@@ -227,9 +193,7 @@
       fill: #267df4;
       margin-right: 10px;
     }
-    &.hidden {
-      display: none;
-    }
+
     &:hover {
       background-color: #fff;
       color: #267df4;
@@ -238,28 +202,6 @@
     }
   }
 
-  &__close-btn {
-    display: none;
-    color: #fff;
-    background-color: #267df4;
-    padding: 10px 15px;
-    border: unset;
-    border-radius: 40px;
-    position: relative;
-    transition: 0.2s;
-    cursor: pointer;
-    &.active {
-      display: block;
-      margin: 0 auto;
-    }
-    &:hover {
-      background-color: #fff;
-      color: #267df4;
-      border: 1px solid #267df4;
-      transition: 0.2s;
-      transform: scale(1.09);
-    }
-  }
   //INFO
   &__info {
     display: flex;
