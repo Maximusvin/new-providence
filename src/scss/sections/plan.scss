@@ -113,7 +113,12 @@
     }
 
     @include for-size(tablet) {
-      width: 510px;
+      width: 490px;
+    }
+
+    @include for-size(mobile) {
+      flex-direction: column;
+      width: 100%;
     }
   }
 
@@ -136,7 +141,7 @@
     }
 
     @include for-size(tablet) {
-      width: 250px;
+      width: 240px;
     }
 
     &-title {
@@ -177,6 +182,10 @@
   &__card-list {
     font-size: 16px;
     color: #26292c;
+
+    @include for-size(tablet) {
+      font-size: 14px;
+    }
   }
 
   &__card-item {
@@ -233,7 +242,7 @@
     }
 
     @include for-size(tablet) {
-      width: 270px;
+      width: 250px;
     }
 
     & .plan__card-btn {
