@@ -111,6 +111,10 @@
       margin-right: auto;
       width: 620px;
     }
+
+    @include for-size(tablet) {
+      width: 510px;
+    }
   }
 
   &__card {
@@ -129,6 +133,10 @@
 
     @include for-size(desktop) {
       width: 300px;
+    }
+
+    @include for-size(tablet) {
+      width: 250px;
     }
 
     &-title {
@@ -222,6 +230,10 @@
 
     @include for-size(desktop) {
       width: 320px;
+    }
+
+    @include for-size(tablet) {
+      width: 270px;
     }
 
     & .plan__card-btn {
