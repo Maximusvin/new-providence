@@ -11,8 +11,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50rem;
+    height: 1000px;
   }
+  @media  (max-width: 660px) {
+    height: 900px;
+  }
+  @media  (max-width: 600px) {
+    height: 800px;
+  }
+
 
   &__background {
     height: 40rem;
@@ -37,7 +44,6 @@
       width: 80%;
       background-position: center 20%;
       margin-top: -20rem;
-
     }
   }
 
