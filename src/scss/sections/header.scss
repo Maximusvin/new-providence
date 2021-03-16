@@ -33,6 +33,9 @@
       margin-left: 86px;
       padding: 0;
     }
+    @include for-size(mobile){
+      margin-left: 0;
+    }
     &.active{
       display: none;
     }
@@ -43,6 +46,7 @@
     align-items: center;
     width: 100%;
     padding-top: 35px;
+    margin-right: 15px;
     font-size: 16px;
     top: 0;
     z-index: 103;
@@ -132,9 +136,11 @@
       display: block;
       margin: 0 auto;
       max-width: 300px;
+      padding-right: unset;
     }
     &.active li{
       font-size: 25px;
+      padding-right: unset;
     }
     & li {
       padding-right: 40px;
@@ -190,6 +196,9 @@
     & a:hover {
       color: #267df4;
       transition: 0.1s;
+      @include for-size(mobile){
+        color:transparent;
+      }
     }
 
   }
@@ -200,6 +209,7 @@
     align-items: center;
     padding: 10px 25px 10px 43px;
     border-radius: 40px;
+    width: 100%;
     position: relative;
     transition: .2s;
     text-decoration: none;
@@ -210,6 +220,11 @@
     @include for-size(tablet){
       left: 12px;
       font-size: 16px;
+    }
+    @include for-size(mobile){
+      display: none;
+      color: transparent;
+      padding: 5px;
     }
     & svg{
       fill: #fff;
@@ -223,19 +238,28 @@
       @include for-size(tablet){
         left: 12px;
       }
+      @include for-size(mobile){
+        left: 25px;
+        width: 20%;
+      }
     }
     &:hover svg{
       fill: #267df4;
       margin-right: 10px;
     }
-    &.hidden{
-      display: none;
+    &.active{
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 20px;
     }
     &:hover{
       background-color: #fff;
       color: #267df4;
       box-shadow: 0 16px 34px -4px #5c5f65;
       transition: .2s;
+      @include for-size(mobile){
+        color: #fff;
+      }
     }
   }
 

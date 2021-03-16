@@ -8,7 +8,9 @@ const headerBtnRef = document.querySelector('.header__info-btn')
 const headerCloseBtn = document.querySelector('.header__close-btn')
 
 const windowResize = window.addEventListener('resize',event=>{
-    if(event.target.innerWidth<=710){
+
+            
+    if(event.target.innerWidth<=768){
         burgerRef.addEventListener('click',() =>{
             burgerRef.classList.add('active')
             burgerRef.classList.add('hidden')
@@ -17,7 +19,7 @@ const windowResize = window.addEventListener('resize',event=>{
             menuListRef.classList.add('active')
             infoListRef.classList.add('active')
             headerLogoRef.classList.add('active')
-            headerBtnRef.classList.add('hidden')
+            headerBtnRef.classList.add('active')
             headerCloseBtn.classList.add('active')
         })
         headerCloseBtn.addEventListener('click',()=>{
@@ -28,12 +30,11 @@ const windowResize = window.addEventListener('resize',event=>{
             menuListRef.classList.remove('active')
             infoListRef.classList.remove('active')
             headerLogoRef.classList.remove('active')
-            headerBtnRef.classList.remove('hidden')
+            headerBtnRef.classList.remove('active')
             headerCloseBtn.classList.remove('active')
         })
-    }else if(event.target.innerWidth>710){
+    }else if(event.target.innerWidth>768){
         burgerRef.removeEventListener('click',() =>{
-            console.log('YES!')
             burgerRef.classList.add('active')
             burgerRef.classList.add('hidden')
             headerMenuRef.classList.add('active')
@@ -41,7 +42,7 @@ const windowResize = window.addEventListener('resize',event=>{
             menuListRef.classList.add('active')
             infoListRef.classList.add('active')
             headerLogoRef.classList.add('active')
-            headerBtnRef.classList.add('hidden')
+            headerBtnRef.classList.add('active')
             headerCloseBtn.classList.add('active')
         })
         headerCloseBtn.removeEventListener('click',()=>{
@@ -52,7 +53,7 @@ const windowResize = window.addEventListener('resize',event=>{
             menuListRef.classList.remove('active')
             infoListRef.classList.remove('active')
             headerLogoRef.classList.remove('active')
-            headerBtnRef.classList.remove('hidden')
+            headerBtnRef.classList.remove('active')
             headerCloseBtn.classList.remove('active')
     })
 }

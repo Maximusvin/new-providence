@@ -23,6 +23,12 @@
     & .swiper-button-prev::after,
     & .swiper-button-next::after {
       color: #d4d4d5;
+      @include for-size(big-tablet){
+        margin-bottom: 30px;
+      }
+      @include for-size(tablet){
+        display: none;
+      }
     }
     &-text-content {
       max-width: 590px;
@@ -64,6 +70,9 @@
     
     & .swiper-pagination img:not(:last-child) {
       margin-right: 130px;
+      @include for-size(big-tablet){
+        margin-right: 50px;
+      }
     }
     
     & .swiper-pagination img {
