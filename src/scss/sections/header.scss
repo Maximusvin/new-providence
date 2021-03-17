@@ -186,7 +186,7 @@
       color: #267df4;
       transition: 0.1s;
       @include for-size(mobile){
-        color:transparent;
+        color: #267df4;
       }
     }
   }
@@ -225,7 +225,7 @@
         left: 12px;
       }
       @include for-size(mobile){
-        left: 25px;
+        left: 7px;
         width: 20%;
       }
     }
