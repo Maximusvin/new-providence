@@ -122,7 +122,6 @@
     @include for-size(tablet) {
       display: block;
     }
-
     & li {
       padding-right: 40px;
 
@@ -186,6 +185,9 @@
     & a:hover {
       color: #267df4;
       transition: 0.1s;
+      @include for-size(mobile){
+        color:transparent;
+      }
     }
   }
 
@@ -195,6 +197,7 @@
     align-items: center;
     padding: 10px 25px 10px 43px;
     border-radius: 40px;
+    width: 100%;
     position: relative;
     transition: 0.2s;
     text-decoration: none;
@@ -221,6 +224,10 @@
       @include for-size(tablet) {
         left: 12px;
       }
+      @include for-size(mobile){
+        left: 25px;
+        width: 20%;
+      }
     }
     &:hover svg {
       fill: #267df4;
@@ -230,7 +237,7 @@
     &:hover {
       background-color: #fff;
       color: #267df4;
-      box-shadow: 0 16px 34px -4px #5c5f65;
+      box-shadow: 0 14px 19px -12px #5c5f65;
       transition: 0.2s;
     }
   }
