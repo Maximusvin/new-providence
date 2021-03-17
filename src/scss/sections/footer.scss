@@ -16,6 +16,10 @@
       flex-direction: column;
       padding-bottom: 60px;
     }
+
+    @include for-size(mobile) {
+      padding-bottom: 20px;
+    }
   }
 
   &__content-wrap {
@@ -107,7 +111,7 @@
     }
 
     @include for-size(mobile) {
-      flex-direction: column;
+      flex-wrap: wrap;
     }
   }
 
@@ -123,6 +127,12 @@
     }
   }
 
+  &__menu {
+    @include for-size(mobile) {
+      margin-bottom: 25px;
+    }
+  }
+
   &__menu h3 {
     font-size: 12px;
     font-weight: 700;
@@ -130,6 +140,10 @@
     text-transform: uppercase;
     color: #26272d;
     margin-bottom: 23px;
+
+    @include for-size(mobile) {
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -150,6 +164,17 @@
     align-items: center;
     padding-top: 37px;
     padding-bottom: 37px;
+
+    @include for-size(mobile) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__column-left {
+    @include for-size(mobile) {
+      margin-bottom: 15px;
+    }
   }
 
   &__column-left p {

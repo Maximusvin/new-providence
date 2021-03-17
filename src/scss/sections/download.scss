@@ -4,6 +4,11 @@
   background-color: #f5f5f8;
   text-align: center;
 
+  @include for-size(mobile) {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
   &__logo {
     color: rgba(58, 61, 75, 0.5);
     font-size: 12px;
@@ -18,6 +23,10 @@
     color: rgb(58, 61, 75);
     line-height: 1.238;
     margin-bottom: 45px;
+
+    @include for-size(mobile) {
+      font-size: 34px;
+    }
   }
 
   &__form {
@@ -45,6 +54,10 @@
     outline: none;
     border-radius: 40px;
     padding-left: 25px;
+
+    @include for-size(mobile) {
+      font-size: 12px;
+    }
 
     @include for-size(mobile) {
       width: 70%;
@@ -75,8 +88,20 @@
     font-size: 16px;
     transition: all 0.2s linear;
 
+    @include for-size(mobile) {
+      padding-left: 7px;
+      padding-right: 7px;
+      padding-top: 8px;
+      padding-bottom: 10px;
+      font-size: 12px;
+    }
+
     & span {
       margin-right: 18px;
+
+      @include for-size(mobile) {
+        margin-right: 0;
+      }
     }
 
     &:hover,
@@ -91,6 +116,10 @@
     display: inline;
     width: 10px;
     fill: #fff;
+
+    @include for-size(mobile) {
+      display: none;
+    }
   }
 
   &__subtitle {

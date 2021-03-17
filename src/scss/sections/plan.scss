@@ -3,6 +3,11 @@
   padding-bottom: 190px;
   background-color: #f4f4f5;
 
+  @include for-size(mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &__select-wrap {
     width: 370px;
 
@@ -142,6 +147,10 @@
 
     @include for-size(tablet) {
       width: 240px;
+    }
+
+    @include for-size(mobile) {
+      margin-bottom: 20px;
     }
 
     &-title {
