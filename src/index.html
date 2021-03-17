@@ -17,6 +17,14 @@
     />
     <meta property="og:image" content="./images/ogm-bg.jpg" />
     <meta property="og:site_name" content="New Providence" />
+    <style>
+      .modal {
+        display: none;
+      }
+      .desctop-element-vis {
+        opacity: 0;
+      }
+    </style>
     <title>New Providence</title>
   </head>
 
@@ -848,9 +856,10 @@
       <section class="subscribe" id="subscribe">
         <div class="container">
           <h2 class="subscribe__title">Subscribe our newsletters</h2>
-          <form class="subscribe__form">
+          <form class="subscribe__form callback-form__container">
             <input
               class="subscribe__input"
+              id="callback-form-input-email"
               type="email"
               placeholder="Your e-mail"
             />
@@ -1050,6 +1059,17 @@
             src="https://youtu.be/-JDo_xGED0M"
             controls
           ></video> -->
+        </div>
+      </div>
+
+      <div class="modal modal-request-received" id="request-received">
+        <div class="request-received-container">
+          <i class="fas fa-times modal-close-btn"></i>
+          <h3 class="request-received-title">{Thanks}</h3>
+          <p class="request-received-primary-msg">We received your request/</p>
+          <p class="request-received-secondary-msg">
+            We will contact you shortly =)
+          </p>
         </div>
       </div>
     </div>
