@@ -82,7 +82,7 @@
               landlady. His face brightened up, and he began to feel quite
               convivial.
             </p>
-            <button class="header__btn">
+            <button class="header__btn" id="header-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="10"
@@ -951,7 +951,30 @@
       </div>
     </footer>
 
-     <button class="main-scrollUp scrollUp">
+    <!-- MODALS -->
+    <div class="modals-wrapper">
+      <div class="modal modal-area-bgd" id="my-video-modal">
+        <div class="my-video-container">
+          <i class="fas fa-times modal-close-btn my-video-close-btn"></i>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-JDo_xGED0M"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <!-- <video
+            class="my-video-content"
+            src="https://youtu.be/-JDo_xGED0M"
+            controls
+          ></video> -->
+        </div>
+      </div>
+    </div>
+
+    <button class="main-scrollUp scrollUp">
       <svg class="svg to-header-btn__img">
         <use href="./images/icon/sprite.svg#icon-circle-up"></use>
       </svg>
