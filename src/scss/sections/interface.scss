@@ -10,74 +10,172 @@
     flex-direction: column;
     align-items: center;
   }
-  &__title{
+
+  &__title {
     text-align: center;
   }
 
   &__title-line {
     background-color: #267DF4;
-    margin: 1.7rem 0 2.04rem 0;
+    margin: 2.2rem 0 2.4rem 0;
     width: 50px;
     height: 1.8px;
+    @include for-size(desktop) {
+      margin: 1.7rem 0 2.04rem 0;
+    }
   }
 
   &__background {
-    height: 770px;
+    width: 370px;
+    height: 946px;
+
     background-image: url("../images/iPhone-screen.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    background-position: 0 9.5rem;
-    width: 299px;
+    background-position: 0 12.2rem;
+
+    @include for-size(desktop) {
+      height: 770px;
+      width: 299px;
+      background-position: 0 9.5rem;
+    }
   }
+
+  &__slide-holder-wrapper {
+    z-index: 20;
+    width: 100%;
+    height: 0;
+    margin: 12.8rem 0 0 2px;
+    display: grid;
+    grid-template-columns: 1fr 25px 321px 25px 1fr;
+    grid-template-rows: 85px 564px 95px;
+    gap: 0;
+    grid-template-areas:
+      ". phonehead phonehead phonehead ."
+      ". phoneleft . phoneright."
+      ". btn btn btn .";
+    position: absolute;
+
+    &--phone-top {
+      grid-area: phonehead;
+      background: no-repeat center url("../images/iphone/Mic.png");
+    }
+
+    &--phone-left {
+      background: no-repeat center url("../images/iphone/L.png");
+      grid-area: phoneleft;
+
+    }
+
+    &--phone-right {
+      grid-area: phoneright;
+      background: no-repeat center url("../images/iphone/R.png");
+
+    }
+
+    &--phone-bottom {
+      grid-area: btn;
+      background: no-repeat center url("../images/iphone/Button.png");
+      width: 99%;
+      background-position-x: -1px;
+    }
+  }
+
+  //&__background-border {
+  //  display:flex;
+  //  flex-direction: column;
+  //  justify-content:center;
+  //  align-items:center;
+  //  &--b{
+  //    position: absolute;
+  //    z-index: 21;
+  //    display:block;
+  //    height: 564px;
+  //    width: 321px;
+  //    border: 1px solid #e0e0e0;
+  //    border-radius: 3px;
+  //    @include for-size(desktop) {
+  //      height: 455px;
+  //      width: 253.6px;
+  //    }
+  //  }
+  //}
 
   &__slider-container {
     display: flex;
     min-width: 0;
     width: 102%;
-    height: 550px;
+    height: 800px;
     overflow: hidden;
     text-align: center;
     justify-content: center;
-    margin: 5.8rem 0 2rem -32px;
+    margin: 8rem 0 2rem -32px;
     padding: 1rem 0 0 0;
 
-    @media (min-width: 769px){
+    @include for-size(desktop) {
+      height: 550px;
+      margin: 5.8rem 0 2rem -32px;
+    }
+
+    @media (min-width: 769px) {
       width: 102.3%;
     }
     @media (min-width: 1283px) {
       width: 102%;
     }
-    @media (min-width: 1400px){
+    @media (min-width: 1400px) {
       width: 101%;
     }
-    @media (min-width: 1665px){
-      width:99.5%;
+    @media (min-width: 1665px) {
+      width: 99.5%;
     }
   }
 
   &__slider {
-    height: 455px;
-    width: 253.6px;
+    height: 564px;
+    width: 321px;
+
+    @include for-size(desktop) {
+      height: 455px;
+      width: 253.6px;
+    }
+
 
     &-slides {
       background-position: center;
       background-repeat: no-repeat;
-      margin: 0 12px;
+      margin: 0 16px;
       background-size: cover;
+
+      @include for-size(desktop) {
+        margin: 0 12px;
+      }
     }
 
-    &-slides.swiper-slide-active{
-      margin: 0 39px;
+    &-slides.swiper-slide-active {
+      margin: 0 49px;
       border: 1px solid #e5e5e5;
       border-radius: 3px;
       filter: none;
+
+      @include for-size(desktop) {
+        margin: 0 39px;
+      }
     }
-    &-slides.swiper-slide-prev{
-      margin: 0 0 0 12px;
+
+    &-slides.swiper-slide-prev {
+      margin: 0 0 0 16px;
+      @include for-size(desktop) {
+        margin: 0 0 0 12px;
+      }
     }
-    &-slides.swiper-slide-next{
-      margin: 0 12px 0 0;
+
+    &-slides.swiper-slide-next {
+      margin: 0 16px 0 0;
+      @include for-size(desktop) {
+        margin: 0 12px 0 0;
+      }
     }
 
     &-slide1 {
