@@ -1,4 +1,9 @@
 /* Burger strat */
+
+.header__logo-tablet {
+  display: none;
+}
+
 .header__burger {
   display: none;
   position: relative;
@@ -43,13 +48,13 @@
 
 .header__burger.active::before {
   transform: rotate(45deg);
-  background-color: #fff;
+  background-color: #000;
   top: 14px;
 }
 
 .header__burger.active::after {
   transform: rotate(-45deg);
-  background-color: #fff;
+  background-color: #000;
   bottom: 14px;
 }
 
@@ -74,7 +79,7 @@ body.lock {
     height: 100%;
     top: 0;
     right: -100%;
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(240, 240, 240);
     padding-top: 45px;
     text-align: center;
     z-index: 2;
@@ -85,5 +90,14 @@ body.lock {
 
   .menu-wrap.active {
     right: 0;
+  }
+
+  .header__logo-tablet {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
   }
 }
