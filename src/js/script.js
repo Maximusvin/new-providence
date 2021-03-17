@@ -1,6 +1,7 @@
 'use strict';
 //js modules
 
+import './aos';
 import './plan';
 import './interface';
 import './customers';

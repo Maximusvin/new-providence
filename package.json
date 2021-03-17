@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "aos": "^2.3.4",
     "core-js": "^3.9.1",
     "handlebars": "^4.7.7",
     "lodash.debounce": "^4.0.8",
