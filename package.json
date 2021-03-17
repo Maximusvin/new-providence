@@ -21,9 +21,9 @@
   },
   "homepage": "https://maximusvin.github.io/new-providence/",
   "devDependencies": {
-    "@babel/core": "^7.13.8",
+    "@babel/core": "^7.13.10",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-env": "^7.13.10",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
@@ -54,6 +54,6 @@
     "handlebars": "^4.7.7",
     "lodash.debounce": "^4.0.8",
     "normalize.css": "^8.0.1",
-    "swiper": "^6.3.5"
+    "swiper": "^6.5.0"
   }
 }
