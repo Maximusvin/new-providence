@@ -3,6 +3,10 @@
   background-color: #fff;
   text-align: center;
 
+  @include for-size(mobile) {
+    padding-top: 60px;
+  }
+
   & .container {
     border-bottom: 1px solid rgba(38, 41, 44, 0.05);
   }
