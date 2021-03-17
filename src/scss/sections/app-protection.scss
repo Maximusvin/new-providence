@@ -103,9 +103,9 @@
       margin-bottom: 1.60rem;
     }
 
-    @include for-size(desktop) {
-      font-size: 1.25vw;
-    }
+    //@include for-size(desktop) {
+    //  font-size: 1.25vw;
+    //}
     @media (max-width: 1099px) {
       font-size: 1.25rem;
     }
@@ -114,7 +114,9 @@
   &__buttons-container {
     display: flex;
     margin-top: 3.35rem;
-
+    @include for-size(tablet){
+      height: 120px;
+    }
     @media (max-width: 484px) {
       width: 69%;
     }
@@ -133,7 +135,8 @@
     margin: 0 15.2rem;
 
     @include for-size(desktop) {
-      margin: 0 10.9rem;
+    //  margin: 0 10.9rem;
+      margin: 4rem 0;
     }
     @media (max-width: 992px) {
       margin: 0 15.2rem;

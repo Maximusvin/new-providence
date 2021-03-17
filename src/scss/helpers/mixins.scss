@@ -84,21 +84,21 @@
     background-color: #6fc754;
     border: 0;
   }
-
-  @media (min-width: 993px) and (max-width: 1283px) {
-    height: 32px;
-    padding: 0 1.8em;
-    border-radius: 16px;
-    font-size: 0.8rem;
-    &:hover {
-      padding: 0 4.8em 0.1em 1.6em;
-    }
-    &:hover > .fa-arrow-right {
-      padding: 0.3em 0 0 0;
-    }
-    .fa-arrow-right {
-      width: 0.6rem;
-      margin: auto auto auto 3em;
-    }
-  }
+  //
+  //@media (min-width: 993px) and (max-width: 1283px) {
+  //  height: 32px;
+  //  padding: 0 1.8em;
+  //  border-radius: 16px;
+  //  font-size: 0.8rem;
+  //  &:hover {
+  //    padding: 0 4.8em 0.1em 1.6em;
+  //  }
+  //  &:hover > .fa-arrow-right {
+  //    padding: 0.3em 0 0 0;
+  //  }
+  //  .fa-arrow-right {
+  //    width: 0.6rem;
+  //    margin: auto auto auto 3em;
+  //  }
+  //}
 }
