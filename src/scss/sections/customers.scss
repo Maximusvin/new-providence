@@ -23,11 +23,12 @@
     & .swiper-button-prev::after,
     & .swiper-button-next::after {
       color: #d4d4d5;
+      margin-bottom: 360px;
       @include for-size(big-tablet){
-        margin-bottom: 30px;
+        margin-bottom: 230px;
       }
       @include for-size(tablet){
-        display: none;
+        margin-bottom: 155px;
       }
     }
     &-text-content {
@@ -73,6 +74,9 @@
       @include for-size(big-tablet){
         margin-right: 50px;
       }
+      @include for-size(mobile){
+        margin-right: 20px;
+      }
     }
     
     & .swiper-pagination img {
@@ -82,14 +86,22 @@
       height: 100px;
       border-radius: 50%;
       margin: 2px;
-      opacity: .3;
+      opacity: .2;
       transition: all 0.2s linear;
+      @include for-size(mobile){
+        width: 70px;
+        height: 70px;
+      }
     }
     & .swiper-pagination img.swiper_pagination_img-active {
       width: 130px;
       height: 130px;
-      box-shadow: 0 16px 34px -4px #5c5f65;
+      box-shadow: 0px 16px 29px -11px rgba(0,0,0,0.27);
       opacity: 1;
+      @include for-size(mobile){
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 }
