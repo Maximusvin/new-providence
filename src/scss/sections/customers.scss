@@ -30,6 +30,9 @@
       @include for-size(tablet){
         margin-bottom: 155px;
       }
+      @include for-size(mobile){
+        display: none;
+      }
     }
     &-text-content {
       max-width: 590px;
