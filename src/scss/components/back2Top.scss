@@ -1,0 +1,48 @@
+/* Button back2Top */
+.to-header-btn {
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  right: 15px;
+  bottom: 50px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.to-header-btn:hover,
+.to-header-btn:focus {
+  outline: none;
+}
+
+.to-header-btn__img {
+  width: 30px;
+  height: 30px;
+  fill: #267df4;
+}
+
+// ==============
+
+.scrollUp {
+  opacity: 0;
+  bottom: 26px;
+  right: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  display: inline-block; /* or block */
+  position: absolute;
+  z-index: 1;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.main-scrollUp {
+  left: 95%;
+  position: sticky;
+
+  @include for-size(mobile) {
+    left: 90%;
+  }
+}

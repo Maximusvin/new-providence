@@ -1,34 +1,23 @@
-const burgerBtnRef = document.querySelector('.burger--btn');
-const burgerRef = document.querySelector('.burger');
-const bodyRef = document.querySelector('.body');
-const menuListRef = document.querySelector('.header__menu-list');
-const logoRef = document.querySelector('.header__logo');
-const infoRef = document.querySelector('.header__info-list');
-const navRef = document.querySelector('.header__navigation');
-const linkRef = document.querySelector('.js-link');
+const refs = {
+  burger: document.querySelector('#burger'),
+  menu: document.querySelector('.menu'),
+  menuWrap: document.querySelector('.menu-wrap'),
+  logoTablet: document.querySelector('.header__logo-tablet'),
+};
 
-burgerBtnRef.addEventListener('click', e => {
-  e.preventDefault();
+refs.burger.addEventListener('click', toggleBurger);
+refs.menuWrap.addEventListener('click', closeBurger);
+refs.logoTablet.addEventListener('click', closeBurger);
 
-  burgerBtnRef.classList.toggle('active');
-  burgerRef.classList.toggle('active');
-  bodyRef.classList.toggle('lock');
-  menuListRef.classList.toggle('active');
-  infoRef.classList.toggle('active');
+function toggleBurger(event) {
+  event.preventDefault();
+  event.currentTarget.classList.toggle('active');
+  refs.menuWrap.classList.toggle('active');
+  document.body.classList.toggle('lock');
+}
 
-  logoRef.classList.toggle('active');
-});
-
-linkRef.addEventListener('click', e => {
-  e.preventDefault();
-
-  if (document.querySelectorAll('.lock').length > 0) {
-    burgerBtnRef.classList.toggle('active');
-    burgerRef.classList.toggle('active');
-    bodyRef.classList.toggle('lock');
-    menuListRef.classList.toggle('active');
-    infoRef.classList.toggle('active');
-
-    logoRef.classList.toggle('active');
-  }
-});
+function closeBurger(event) {
+  refs.burger.classList.remove('active');
+  refs.menuWrap.classList.remove('active');
+  document.body.classList.remove('lock');
+}
