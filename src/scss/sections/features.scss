@@ -3,6 +3,10 @@
   padding-bottom: 40px;
   background-color: #fff;
 
+  @include for-size(mobile) {
+    padding-bottom: 0;
+  }
+
   &__wrap {
     padding-bottom: 125px;
     border-bottom: 1px solid rgba(38, 39, 45, 0.051);
@@ -11,6 +15,10 @@
 
     @include for-size(tablet) {
       flex-direction: column;
+    }
+
+    @include for-size(mobile) {
+      padding-bottom: 50px;
     }
   }
 
