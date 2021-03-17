@@ -41,4 +41,8 @@
 .main-scrollUp {
   left: 95%;
   position: sticky;
+
+  @include for-size(mobile) {
+    left: 90%;
+  }
 }
