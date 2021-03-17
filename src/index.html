@@ -14,63 +14,59 @@
     <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
-          <div class="burger"></div>
           <nav class="header__navigation">
-            <!-- Max -->
-            <div class="burger--btn">
-              <div class="header__burger">
-                <span></span>
-              </div>
+            <div class="header__burger" id="burger">
+              <span></span>
             </div>
+            <div class="menu-wrap">
+              <div class="header__menu">
+                <div class="header__burger1">
+                  <a href="#header">
+                    <span></span>
+                  </a>
+                </div>
 
-            <div class="header__menu">
-              <!-- juliya -->
-              <div class="header__burger1">
-                <a href="#header">
-                  <span></span>
-                </a>
+                <ul class="header__menu-list">
+                  <li class="js-link">
+                    <a href="#">Tour</a>
+                  </li>
+                  <li class="js-link"><a href="#features">Features</a></li>
+                  <li class="js-link"><a href="#">Pricing</a></li>
+                </ul>
               </div>
 
-              <ul class="header__menu-list">
+              <a href="#header" class="logo header__logo js-link">
+                <span class="logo__bold">New</span>Providence
+              </a>
+
+              <ul class="header__info-list">
                 <li class="js-link">
-                  <a href="#">Tour</a>
+                  <a class="info-list-item" href="#">Help</a>
                 </li>
-                <li class="js-link"><a href="#features">Features</a></li>
-                <li class="js-link"><a href="#">Pricing</a></li>
+                <li class="js-link">
+                  <a class="info-list-item" href="#">Contacts</a>
+                </li>
+                <li class="js-link">
+                  <a href="#" class="header__info-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16.09"
+                      height="19.937"
+                      viewBox="0 0 16.09 19.937"
+                    >
+                      <path
+                        id="Apple_Icon"
+                        data-name="Apple Icon"
+                        class="cls-1"
+                        d="M1281.34,63.57a4.524,4.524,0,0,1,2.14-3.8,4.59,4.59,0,0,0-3.62-1.975c-1.53-.162-3,0.919-3.78.919s-1.99-.9-3.27-0.877a4.816,4.816,0,0,0-4.06,2.5c-1.75,3.065-.45,7.571,1.23,10.049,0.85,1.214,1.83,2.569,3.11,2.521,1.26-.052,1.73-0.81,3.25-0.81,1.5,0,1.95.81,3.26,0.779,1.35-.022,2.2-1.219,3.01-2.443a10.312,10.312,0,0,0,1.38-2.832A4.351,4.351,0,0,1,1281.34,63.57Zm-2.48-7.407a4.462,4.462,0,0,0,1.01-3.194,4.5,4.5,0,0,0-2.91,1.518,4.307,4.307,0,0,0-1.04,3.078A3.7,3.7,0,0,0,1278.86,56.163Z"
+                        transform="translate(-1267.91 -52.969)"
+                      />
+                    </svg>
+                    Get App
+                  </a>
+                </li>
               </ul>
             </div>
-
-            <a href="#header" class="logo header__logo js-link">
-              <span class="logo__bold">New</span>Providence
-            </a>
-
-            <ul class="header__info-list">
-              <li class="js-link">
-                <a class="info-list-item" href="#">Help</a>
-              </li>
-              <li class="js-link">
-                <a class="info-list-item" href="#">Contacts</a>
-              </li>
-              <li class="js-link">
-                <a href="#" class="header__info-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16.09"
-                    height="19.937"
-                    viewBox="0 0 16.09 19.937"
-                  >
-                    <path
-                      id="Apple_Icon"
-                      data-name="Apple Icon"
-                      class="cls-1"
-                      d="M1281.34,63.57a4.524,4.524,0,0,1,2.14-3.8,4.59,4.59,0,0,0-3.62-1.975c-1.53-.162-3,0.919-3.78.919s-1.99-.9-3.27-0.877a4.816,4.816,0,0,0-4.06,2.5c-1.75,3.065-.45,7.571,1.23,10.049,0.85,1.214,1.83,2.569,3.11,2.521,1.26-.052,1.73-0.81,3.25-0.81,1.5,0,1.95.81,3.26,0.779,1.35-.022,2.2-1.219,3.01-2.443a10.312,10.312,0,0,0,1.38-2.832A4.351,4.351,0,0,1,1281.34,63.57Zm-2.48-7.407a4.462,4.462,0,0,0,1.01-3.194,4.5,4.5,0,0,0-2.91,1.518,4.307,4.307,0,0,0-1.04,3.078A3.7,3.7,0,0,0,1278.86,56.163Z"
-                      transform="translate(-1267.91 -52.969)"
-                    />
-                  </svg>
-                  Get App
-                </a>
-              </li>
-            </ul>
           </nav>
 
           <div class="header__info">
@@ -95,8 +91,9 @@
                   class="cls-1"
                   d="M740,469.447v-8.883a0.629,0.629,0,0,1,.962-0.479c0.383,0.193,8.044,4.1,8.7,4.433a0.522,0.522,0,0,1,0,.963c-0.47.244-8.16,4.17-8.717,4.442A0.626,0.626,0,0,1,740,469.447Z"
                   transform="translate(-740 -460)"
-                /></svg
-              >Watch Video
+                />
+              </svg>
+              Watch Video
             </button>
           </div>
           <div class="header__image">
