@@ -1,49 +1,57 @@
 .app-protection {
-  height: 40rem;
+  height: 48rem;
   max-height: 1000px;
   margin: 5rem 0;
-  @media (max-width: 1024px) {
+
+  @media (min-width: 1602px) {
     height: 40rem;
   }
-
-  @media  (max-width: 992px) {
+  @include for-size(desktop) {
+    height: 40rem;
+  }
+  @media (max-width: 992px) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 1000px;
+    height: 750px;
   }
-  @media  (max-width: 660px) {
-    height: 900px;
-  }
-  @media  (max-width: 600px) {
-    height: 800px;
-  }
-
 
   &__background {
-    height: 40rem;
+    height: 48rem;
     background-image: url("../images/iPhone-6.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 59%;
-    z-index: -10;
-    background-position: -4.8rem 0;
+    background-position: -6.4rem 0;
     max-height: 800px;
+
     @media (min-width: 1602px) {
       background-position: 75%;
+      height: 35rem;
+      width: 56%;
     }
-    @media (max-width: 1024px) {
+    @media (min-width: 1283px) and (max-width: 1525px) {
+      background-position: -5.5rem 0;
+    }
+    @include for-size(desktop) {
       height: 40rem;
-      background-position: -4.8rem 50%;
+      background-position: -4.8rem 0;
     }
-
-
-    @media  (max-width: 992px) {
+    @media (max-width: 1100px) {
+      background-position: -3.8rem 50%;
+    }
+    @media (max-width: 992px) {
+      height: 25rem;
       width: 80%;
       background-position: center 20%;
-      margin-top: -20rem;
+      margin-top: -25rem;
+    }
+    @media (max-width: 365px) {
+      height: 20rem;
+      width: 75%;
+      margin: -30rem 0 0 0;
     }
   }
 
@@ -55,7 +63,10 @@
     flex-wrap: wrap;
     height: 100%;
 
-    @media  (max-width: 992px) {
+    @media (min-width: 1221px) and (max-width: 1282px) {
+      margin-left: 15%;
+    }
+    @media (max-width: 992px) {
       flex-direction: column;
       padding: 0 5% 0 5%;
     }
@@ -64,15 +75,15 @@
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: 41%;
+    max-width: 42%;
     min-width: 270px;
     padding: 11.2% 0 0 0;
 
-    @include for-size(desktop) {
-      max-width: 40.5%;
+    @media (min-width: 1099px) and (max-width: 1220px) {
+      max-width: 37%;
     }
 
-    @media  (max-width: 992px) {
+    @media (max-width: 992px) {
       padding: 0;
       max-width: 100%;
     }
@@ -97,12 +108,13 @@
     }
     @media (max-width: 1099px) {
       font-size: 1.25rem;
-     }
+    }
   }
 
   &__buttons-container {
     display: flex;
     margin-top: 3.35rem;
+
     @media (max-width: 484px) {
       width: 69%;
     }
@@ -123,11 +135,9 @@
     @include for-size(desktop) {
       margin: 0 10.9rem;
     }
-
-    @media  (max-width: 992px) {
+    @media (max-width: 992px) {
       margin: 0 15.2rem;
     }
-
     @media (max-width: 540px) {
       margin: 4rem 0;
     }
